@@ -6,6 +6,13 @@ NPlan是使用NUI图形引擎开发的一款项目管理软件，里面使用了
 
 有关软件的详细信息，请参考网站
 
+http://www.nuiengine.com
+http://nplan.nuiengine.com
+
+Demo video:
+https://www.youtube.com/watch?v=FyqRYts4o5E  or   https://v.youku.com/v_show/id_XMTMzODAxOTkzNg==.html?spm=a1z3jc.11711052.0.0&isextonly=1
+
+
 编译环境：
 NPlan有windows Linux Android IOS版本，但是后面三个平台只是实验性开发，功能实现并不完善。
 本次仅上传最成熟的windows平台版本，编译环境VS2010(SP1)
