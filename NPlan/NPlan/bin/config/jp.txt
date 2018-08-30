@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<NPlanString>
+	<String name="main_new" value="新規項目" />
+	<String name="main_open" 	value="項目開き" />
+	<String name="main_public" 	value="リソース管理" />
+	<String name="main_setting" 	value="設定ボタン" />
+	<String name="main_help" 	value="マニュアル" />
+	<String name="main_about" 	value="アバウト" />
+	<String name="task" 		value="任務" />
+	<String name="task_title" 	value="任務管理" />
+	<String name="task_desc"	value="任務説明する" />
+	<String name="task_resource_name" 		value="任務名" />
+	<String name="action_name" 				value="アクション名" />
+	<String name="task_resource_time_start" value="開始時間" />
+	<String name="task_resource_time_end" 	value="終了時間" />
+	<String name="task_card_name" 			value="サブ任務" />
+	<String name="task_resource" 			value="リソース" />
+	<String name="task_owner" 		value="責任者" />
+	<String name="task_time" 		value="予想時間" />
+	<String name="task_state " 		value="任務状態" />
+	<String name="task_borad_type"	value="Task Borad Type" />
+	<String name="name" 			value="名称" />
+	<String name="id" 				value="番号" />
+	<String name="res_type" 			value="資源のタイプ" />
+	<String name="ok" 				value="決定" />
+	<String name="cancel" 			value="取消" />
+	<String name="delete"			value="削除" />
+	<String name="resource_edit" 	value="リソース管理" />
+	<String name="resource_group" 	value="リソース·グループ" />
+	<String name="resource_item" 	value="リソース項目" />
+	<String name="project_name" 	value="プロジェクト名" />
+	<String name="project_res" 	value="プロジェクトメンバー（全体から資源導入）" />
+	<String name="project_desc" 	value="プロジェクトの説明" />
+	<String name="mile_stone" 		value="マイルストーン" />
+	<String name="event" 			value="イベント	" />
+	<String name="project_info" 	value="プロジェクト情報" />
+	<String name="edit_title " 		value="マイルストーン編集" />
+	<String name="milestone_name" 	value="マイルストーン名" />
+	<String name="mem_edit" 		value="メンバ編集" />
+	<String name="set_title" 		value="設定" />
+	<String name="set_lang" 		value="画面言語" />
+	<String name="set_jp" 			value="日本語" />
+	<String name="set_cn" 			value="中国語" />
+	<String name="set_en" 			value="英語" />
+	<String name="warning" 			value="提示" />
+	<String name="error" 			value="誤った" />
+	<String name="save_warning"		value="プロジェクト内容に修正があり、プロジェクトファイルを保存しますか?" />
+	<String name="delete_warning" 	value="削除项目?" />
+	<String name="save_fail"		value="ファイル保存に失敗、ファイルが読取り専用かご確認ください!" />
+	<String name="export_fail" 		value="ファイル保存に失敗!" />
+	<String name="delete_fail" 		value="削除失敗しない!" />
+	<String name="export_ok" 		value="ファイル保存に成功!" />
+	<String name="week1" 			value="月" />
+	<String name="week2" 			value="火" />
+	<String name="week3" 			value="水" />
+	<String name="week4" 			value="木" />
+	<String name="week5" 			value="金" />
+	<String name="week6" 			value="土" />
+	<String name="week0" 			value="日" />
+	<String name="man" 				value="男" />
+	<String name="woman" 			value="女性" />
+	<String name="device" 			value="デバイス" />
+	<String name="all_week1" 			value="月曜日" />
+	<String name="all_week2" 			value="火曜日" />
+	<String name="all_week3" 			value="水曜日" />
+	<String name="all_week4" 			value="木曜日" />
+	<String name="all_week5" 			value="金曜日" />
+	<String name="all_week6" 			value="土曜日" />
+	<String name="all_week0" 			value="日曜日" />
+	<String name="normal_calendar" 			value="Normal Calendar" />
+	<String name="task_calendar" 			value="Show Task" />
+	<String name="taskcard_calendar" 		value="Show Action" />
+	<String name="workday" 			value="仕事の日" />
+	<String name="holiday" 			value="休日" />
+	<String name="overtime" 		value="殘業" />
+	<String name="open_prj" 		value="打开项目" />
+	<String name="del_prj" 			value="削除项目" />
+
+	<String name="min" 			value="最小化" />
+	<String name="max" 			value="極大化" />
+	<String name="restore" 			value="復元" />
+	<String name="exit" 			value="退出" />
+	<String name="save_prj" 			value="保存" />
+	<String name="saveas_prj" 			value="名前を付けて保存" />
+	<String name="setting_prj" 			value="項目設定" />
+	<String name="fold_prj" 			value="折り畳む" />
+	<String name="unfold_prj" 			value="展開する" />
+	<String name="back_prj" 			value="リターン" />
+	<String name="add_action" 			value="任務を增加する" />
+	<String name="add_milestone" 			value="マイルストーンを增加する" />
+	<String name="next_milestone" 			value="次のマイルストーン" />
+	<String name="prev_milestone" 			value="前のマイルストーン" />
+	
+	<String name="yes" 					value="はい" />
+	<String name="no"		 			value="いいえ" />
+	<String name="id_exist"		 	value="すでに存在するIDです!" />
+	<String name="id_error"		 	value="ＩＤが間違っています。再入力してください!" />
+	<String name="input_name"		 value="名前を入力してください!" />
+	<String name="create_file_fail"	 value="ファイル作成に失敗しました!" />
+	<String name="prj_name_error"	 value="プロジェクトに名前を付けてください" />
+	<String name="open_file_invalid" value="導入されたファイルは、WPまたはEXCELでオープンできますか?" />
+	<String name="open_file_fail"	 value="指定されたパスが存在しません。パスが正しいか確認してください!" />
+	<String name="open_fail"	 value="ファイルのオープンに失敗しました!" />
+	<String name="import_res"	 value="メンバー導入" />
+	<String name="add_res"	 	 value="メンバー追加" />
+	<String name="del_res"	 	 value="メンバー削除" />
+	<String name="mod_res"	 	value="メンバー編集" />
+	<String name="add_action"	 value="添加任務" />
+	<String name="project_edit"	 value="プロジェクト編集" />
+	<String name="timeline_bar"	 value="タスク時間軸ウィンドウ" />
+	<String name="task_board"	 value="タスクボード" />
+	<String name="resource_board"	 value="リソースボード" />
+	<String name="project_calendar"	 value="プロジェクトカレンダー" />
+	<String name="no_prompt"	 value="次回から表示しない" />
+	<String name="add_task"	 value="タスクを追加する" />
+	<String name="add_action"	 value="actionを追加する" />
+	<String name="edit_prj_name"	 value="プロジェクト名を編集する" />
+	<String name="edit_task_name"	 value="タスク名を編集する" />
+	<String name="edit_action_name"	 value="action名を編集する" />
+	<String name="edit_action_time"	 value="actionの労働量の編集" />
+	<String name="delete_task"	 value="タスクを削除する" />
+	<String name="delete_action"	 value="actionを削除する" />
+	<String name="clear_action"	 value="すべてのactionを消去する" />
+	<String name="start_use"	 value="使用開始" />
+
+</NPlanString>

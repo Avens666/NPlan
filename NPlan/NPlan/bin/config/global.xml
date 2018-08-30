@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NProject>
+    <ResourcePool>
+        <ResourceGroup />
+        <Resources>
+            <Resource name="EvanChen" id="1" type="0" group="" />
+            <Resource name="Jodan" id="111" type="0" group="0" />
+            <Resource name="Jack" id="120" type="0" group="0" />
+            <Resource name="Tom" id="121" type="0" group="" />
+            <Resource name="Mark" id="122" type="0" group="" />
+            <Resource name="Rose" id="123" type="1" group="2" />
+            <Resource name="Jill" id="124" type="1" group="" />
+            <Resource name="Lily" id="125" type="1" group="1" />
+            <Resource name="Chris" id="126" type="0" group="" />
+            <Resource name="Neno" id="160" type="0" group="2" />
+            <Resource name="Frack" id="165" type="0" group="2" />
+            <Resource name="Cici" id="175" type="1" group="3" />
+            <Resource name="Joe" id="180" type="1" group="3" />
+            <Resource name="Kiki" id="185" type="1" group="1" />
+            <Resource name="希特勒" id="320" type="0" group="" />
+            <Resource name="墨索里尼" id="321" type="0" group="" />
+            <Resource name="裕仁" id="322" type="0" group="" />
+            <Resource name="罗斯福" id="323" type="0" group="" />
+            <Resource name="杜鲁门" id="324" type="0" group="" />
+            <Resource name="丘吉尔" id="325" type="0" group="" />
+            <Resource name="蒋介石" id="326" type="0" group="" />
+            <Resource name="斯大林" id="327" type="0" group="" />
+            <Resource name="戴高乐" id="328" type="0" group="" />
+            <Resource name="朱可夫 " id="329" type="0" group="" />
+            <Resource name="尼米兹 " id="330" type="0" group="" />
+            <Resource name="麦克阿瑟 " id="331" type="0" group="" />
+            <Resource name="巴顿 " id="332" type="0" group="" />
+            <Resource name="蒙哥马利  " id="333" type="0" group="" />
+            <Resource name="隆美尔 " id="334" type="0" group="" />
+            <Resource name="曼斯坦因" id="335" type="0" group="" />
+            <Resource name="古德里安 " id="336" type="0" group="" />
+            <Resource name="山本五十六 " id="337" type="0" group="" />
+        </Resources>
+    </ResourcePool>
+</NProject>

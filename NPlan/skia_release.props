@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>SK_SCALAR_IS_FLOAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\skia\include\;..\..\skia\include\config;..\..\skia\include\core;..\..\skia\include\effects;..\..\skia\include\images;..\..\skia\include\xml;..\..\skia\include\gpu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\skia\out\Release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;skia_effects.lib;skia_images.lib;skia_core.lib;skia_opts_ssse3.lib;skia_utils.lib;skia_ports.lib; skia_sfnt.lib; skia_skgpu.lib;skia_utils.lib; skia_opts.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\skia\out\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>user32.lib;gdi32.lib;shell32.lib;usp10.lib;skia_effects.lib;skia_images.lib;skia_core.lib;skia_opts_ssse3.lib;skia_utils.lib;skia_ports.lib;skia_sfnt.lib;skia_skgpu.lib;skia_opts.lib;skia_views.lib;skia_xml.lib;libwebp_demux.lib;libwebp_dsp.lib;libwebp_enc.lib;libwebp_utils.lib;libwebp_dec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\file">
+      <UniqueIdentifier>{c1df7db5-989e-445f-ac95-5b1d762bfb5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\file">
+      <UniqueIdentifier>{f0bdafad-377d-4431-bd25-56518008e35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Page">
+      <UniqueIdentifier>{0d58016a-6114-4565-a678-3238b6a3fa03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\views">
+      <UniqueIdentifier>{681acd58-20bc-46b2-9a84-b98ce80dd545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\connect">
+      <UniqueIdentifier>{9ae4c4ed-71e3-48b0-a4ef-aade5bed1a4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\connect">
+      <UniqueIdentifier>{74f975a1-468f-4e7e-ae35-aa486e316da3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="NPlan.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="file\excel9.tlh">
+      <Filter>头文件\file</Filter>
+    </None>
+    <None Include="file\excel9.tli">
+      <Filter>头文件\file</Filter>
+    </None>
+    <None Include="file\mso9.tlh">
+      <Filter>头文件\file</Filter>
+    </None>
+    <None Include="file\mso9.tli">
+      <Filter>头文件\file</Filter>
+    </None>
+    <None Include="file\VBE6EXT.tlh">
+      <Filter>头文件\file</Filter>
+    </None>
+    <None Include="file\VBE6EXT.tli">
+      <Filter>头文件\file</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NPlan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NTimeBarPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\TimeLine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\TimeBarView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\TaskView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\TaskBarView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectXMLData.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectBaseFile.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectData.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectDataStruct.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectExcelData.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectResourcePool.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NGlobleTaskBoard.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NGlobleResourcePool.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\XExcel.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NBottomView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NMainView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectBaseInfo.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\utility.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectEvent.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectMileStone.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectResGroup.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectResource.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectTask.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectTaskCard.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="manager\KStringManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NPublicSourceView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NScaleSilderView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NProjectView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="manager\KProjectManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NSlideView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NSilderCursorView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectTaskBoardItem.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectTaskBoard.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NGridView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NStoryBoardPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NProjectPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectResActivity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectObject.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NTaskSourceView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NPlanAppView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NBottomMenuView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NMemberSourceView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectMPPXMLData.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectXLSXMLData.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="view\MilestoneEditView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NTaskListItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="manager\KConfigManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NSettingView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NAboutView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NDragStaffView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectCalendar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file\NProjectWarning.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NCalendarPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NCalendarDayView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\Calendar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NNormalSilderView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NMessageBoxView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NProjectEditPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\KResourceGroupView.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NResourceGroupView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NSwicthImagePage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="view\NPromptView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KMD5.h">
+      <Filter>头文件\connect</Filter>
+    </ClInclude>
+    <ClInclude Include="KMACInfo.h">
+      <Filter>头文件\connect</Filter>
+    </ClInclude>
+    <ClInclude Include="UserCountSuggestion.h">
+      <Filter>头文件\connect</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>头文件\connect</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NPlan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NGlobleResourcePool.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NGlobleTaskBoard.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectBaseFile.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectData.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectExcelData.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NprojectResourcePool.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectXMLData.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\XExcel.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectBaseInfo.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectTaskCard.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectResource.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectResGroup.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectMileStone.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectEvent.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectTask.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="manager\KStringManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="manager\KProjectManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectTaskBoardItem.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectTaskBoard.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectObject.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\utility.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NProjectPage.cpp">
+      <Filter>源文件\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NTimeBarPage.cpp">
+      <Filter>源文件\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NStoryBoardPage.cpp">
+      <Filter>源文件\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NBottomView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NGridView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NPublicSourceView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NProjectView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NScaleSilderView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NSilderCursorView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NSlideView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NStaffView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\TaskBarView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\TaskView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\TimeBarView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\TimeLine.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectResActivity.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NMainView.cpp">
+      <Filter>源文件\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NTaskSourceView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NTaskListItem.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NPlanAppView.cpp">
+      <Filter>源文件\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="view\KListViewEx.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NBottomMenuView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NMemberSourceView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectMPPXMLData.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectXLSXMLData.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NProjectResourceView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\MilestoneEditView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NSettingView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NMenu.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NAboutView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NDragStaffView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectCalendar.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\NProjectWarning.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NCalendarPage.cpp">
+      <Filter>源文件\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NCalendarDayView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\Calendar.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NNormalSilderView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NMessageBoxView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="NPlan_ios.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NPlan_win32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NPlan_qt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NPlan_android.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NProjectEditPage.cpp">
+      <Filter>源文件\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NMindMapView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NResourceGroupView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NSwicthImagePage.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="view\NPromptView.cpp">
+      <Filter>源文件\views</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection.cpp">
+      <Filter>源文件\connect</Filter>
+    </ClCompile>
+    <ClCompile Include="KMD5.cpp">
+      <Filter>源文件\connect</Filter>
+    </ClCompile>
+    <ClCompile Include="KMACInfo.cpp">
+      <Filter>源文件\connect</Filter>
+    </ClCompile>
+    <ClCompile Include="UserCountSuggestion.cpp">
+      <Filter>源文件\connect</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NPlan.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

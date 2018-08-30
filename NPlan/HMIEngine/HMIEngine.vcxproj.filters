@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\view">
+      <UniqueIdentifier>{09d4a290-ee09-40fa-8204-3ece2b532788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\drawable">
+      <UniqueIdentifier>{b91af8e1-b11b-4654-9462-7edd4aae117c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\drawable">
+      <UniqueIdentifier>{44d1a6a5-80de-4670-b516-34c351135203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\view">
+      <UniqueIdentifier>{31d00380-9e8d-4b1f-8168-4ebca2d6b776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interface">
+      <UniqueIdentifier>{1974f687-d113-4302-8551-7af9da6d33c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\viewhelper">
+      <UniqueIdentifier>{73d88b53-1845-41a2-9888-70dd3b9c48f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\viewhelper">
+      <UniqueIdentifier>{5e222ed0-efab-4bd6-9912-f937774ca60a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Animation">
+      <UniqueIdentifier>{7128ec53-ed1f-4c4a-a740-c0176c49bfea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Animation">
+      <UniqueIdentifier>{45708f56-1dad-4ed9-a56a-533e3b323b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\System">
+      <UniqueIdentifier>{4986d804-e07f-49bc-9d4e-61ca15cb72d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\System">
+      <UniqueIdentifier>{51cb479f-0baf-471d-8e78-f237256fdbdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BaseLib">
+      <UniqueIdentifier>{ad9f9f60-f9a8-49da-a65f-29341ed30d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\BaseLib">
+      <UniqueIdentifier>{a0d6c0c8-495b-4c60-99be-5a3f24a57db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\resManager">
+      <UniqueIdentifier>{2f4bfb88-3430-433c-bad2-68015b591203}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Interface\HMIEngine\KShapeDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KTextDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KColorDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KImageDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KScreen.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KLayer.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\sigslot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KViewGroup.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\DataSync.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KMoveableView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\NUIAnimation.h">
+      <Filter>头文件\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\AnimationThread.h">
+      <Filter>头文件\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KButtonView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\mainforwindows.h">
+      <Filter>头文件\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KTimer.h">
+      <Filter>头文件\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KTextView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\message.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KCheckboxView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KListView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KProcessView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KSvgAnalyzing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KGalleryView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KFontManager.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\K9PatchImageDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KEditView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KBitmapTextDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\BaseClass\KGlobalFunction.h">
+      <Filter>源文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\BaseClass\CharSet.h">
+      <Filter>头文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\BaseClass\FilePath.h">
+      <Filter>头文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\BaseClass\KFile.h">
+      <Filter>头文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\BaseClass\KNFile.h">
+      <Filter>头文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\BaseClass\KProfile.h">
+      <Filter>头文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KSlideView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KSwitchButtonView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KMenuView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KTipView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KGestureDetector.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KStringManager.h">
+      <Filter>头文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KStaticTextView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KTextMultiLineDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KConfigManager.h">
+      <Filter>头文件\BaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KColorTextDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KPathEffectDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KAreaBlurDrawable.h">
+      <Filter>头文件\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Interface\HMIEngine\KWaveEffectView.h">
+      <Filter>头文件\viewhelper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\KDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KImageDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KShapeDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KTextDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KScreen.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KLayer.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KColorDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KViewGroup.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\DataSync.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMoveableView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Easing.cpp">
+      <Filter>源文件\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KEasingCurve.cpp">
+      <Filter>源文件\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NUIAnimation.cpp">
+      <Filter>源文件\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\AnimationThread.cpp">
+      <Filter>源文件\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KButtonView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\mainforwindows.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KTimer.cpp">
+      <Filter>源文件\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KTextView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KCheckboxView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KListView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KProcessView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSvgAnalyzing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KGalleryView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\K9PatchImageDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KEditView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KBitmapTextDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Interface\BaseClass\CharSet.cpp">
+      <Filter>源文件\BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Interface\BaseClass\error.cpp">
+      <Filter>源文件\BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Interface\BaseClass\FilePath.cpp">
+      <Filter>源文件\BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Interface\BaseClass\KFile.cpp">
+      <Filter>源文件\BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Interface\BaseClass\KGlobalFunction.cpp">
+      <Filter>源文件\BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Interface\BaseClass\KNFile.cpp">
+      <Filter>源文件\BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Interface\BaseClass\KProfile.cpp">
+      <Filter>源文件\BaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KTextMultiLineDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSlideView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSurfaceManager.cpp">
+      <Filter>源文件\resManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\message.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSwitchButtonView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KFontManager.cpp">
+      <Filter>源文件\resManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMenuView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KTipView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KKoteiMessage.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\messageforwindows.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\messageforlinux.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\mainforlinux.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KGestureDetector.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KConfigManager.cpp">
+      <Filter>源文件\resManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KStringManager.cpp">
+      <Filter>源文件\resManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KStaticTextView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KColorTextDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPathEffectDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KAreaBlurDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KWaveEffectDrawable.cpp">
+      <Filter>源文件\drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KWaveEffectView.cpp">
+      <Filter>源文件\viewhelper</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

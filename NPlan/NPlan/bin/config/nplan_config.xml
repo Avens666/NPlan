@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NUIConfig>
+    <onelayer>
+        <language>2</language>
+        <runfirst>0</runfirst>
+        <welcomeimage1>./help/welcome1.png</welcomeimage1>
+        <welcomeimage2>./help/welcome2.png</welcomeimage2>
+        <welcomeimage3>./help/welcome3.png</welcomeimage3>
+        <welcomeimage4>./help/welcome4.png</welcomeimage4>
+        <welcomeimage5>./help/welcome5.png</welcomeimage5>
+        <first_start_image_mumber>5</first_start_image_mumber>
+        <helpimage1>./help/helpimage1.jpg</helpimage1>
+        <helpimage2>./help/helpimage2.jpg</helpimage2>
+        <helpimage3>./help/helpimage3.jpg</helpimage3>
+        <helpimage4>./help/helpimage4.jpg</helpimage4>
+        <helpimage5>./help/helpimage5.jpg</helpimage5>
+        <helpimage6>./help/helpimage6.jpg</helpimage6>
+        <helpimage7>./help/helpimage7.jpg</helpimage7>
+        <helpimage8>./help/helpimage8.jpg</helpimage8>
+        <helpimage9>./help/helpimage9.jpg</helpimage9>
+        <helpimage10>./help/helpimage10.jpg</helpimage10>
+        <helpimage11>./help/helpimage11.jpg</helpimage11>
+        <help_image_mumber>11</help_image_mumber>
+        <calendar_mode>1</calendar_mode>
+        <xls_save_as_prompt>1</xls_save_as_prompt>
+        <xml_save_as_prompt>1</xml_save_as_prompt>
+        <firstboot>1</firstboot>
+    </onelayer>
+    <twolayer>
+        <historys />
+    </twolayer>
+</NUIConfig>

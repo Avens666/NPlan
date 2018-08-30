@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NProject color="2">
+    <StartDate>1939-09-01T00:00:00</StartDate>
+    <FinishDate>1945-09-09T15:24:08</FinishDate>
+    <DefaultStartTime>09:00:00</DefaultStartTime>
+    <DefaultFinishTime>18:00:00</DefaultFinishTime>
+    <MinutesPerDay>480</MinutesPerDay>
+    <MinutesPerWeek>2400</MinutesPerWeek>
+    <DaysPerMonth>20</DaysPerMonth>
+    <Calendars>
+        <Calendar>
+            <WorkDays></WorkDays>
+        </Calendar>
+        <Calendar>
+            <Holidays></Holidays>
+        </Calendar>
+    </Calendars>
+    <BaseInfo version="1.0" name="二战历史" leader="罗斯福" proDescribe="" />
+    <ResourcePool>
+        <ResourceGroup />
+        <Resources>
+            <Resource name="希特勒" id="320" type="0" group="" />
+            <Resource name="墨索里尼" id="321" type="0" group="" />
+            <Resource name="裕仁" id="322" type="0" group="" />
+            <Resource name="罗斯福" id="323" type="0" group="" />
+            <Resource name="杜鲁门" id="324" type="0" group="" />
+            <Resource name="丘吉尔" id="325" type="0" group="" />
+            <Resource name="蒋介石" id="326" type="0" group="" />
+            <Resource name="斯大林" id="327" type="0" group="" />
+            <Resource name="戴高乐" id="328" type="0" group="" />
+            <Resource name="朱可夫 " id="329" type="0" group="" />
+            <Resource name="尼米兹 " id="330" type="0" group="" />
+            <Resource name="麦克阿瑟 " id="331" type="0" group="" />
+            <Resource name="巴顿 " id="332" type="0" group="" />
+            <Resource name="蒙哥马利  " id="333" type="0" group="" />
+            <Resource name="隆美尔 " id="334" type="0" group="" />
+            <Resource name="曼斯坦因" id="335" type="0" group="" />
+            <Resource name="古德里安 " id="336" type="0" group="" />
+            <Resource name="山本五十六 " id="337" type="0" group="" />
+            <Resource name="薛岳" id="338" type="0" group="" />
+            <Resource name="冈村宁次" id="339" type="0" group="" />
+            <Resource name="南云忠一" id="340" type="0" group="" />
+            <Resource name="巴克纳" id="341" type="0" group="" />
+        </Resources>
+    </ResourcePool>
+    <TaskBoard>
+        <Item name="Todo" id="0" />
+        <Item name="In Process" id="1" />
+        <Item name="Verify" id="2" />
+        <Item name="Done" id="3" />
+    </TaskBoard>
+    <Tasks>
+        <Task color="5">
+            <TaskInfo name="德国入侵波兰" id="1" leader="335" task_describe="" members="335" start_time="1939-09-01" end_time="1939-09-30 02:43:12" />
+        </Task>
+        <Task color="5">
+            <TaskInfo name="德国发动“闪电”攻势" id="2" leader="320" task_describe="" members="320" start_time="1940-04-01 15:20:36" end_time="1940-06-22 15:20:36" />
+        </Task>
+        <Task color="4">
+            <TaskInfo name="敦刻尔克大撤退" id="3" leader="328" task_describe="" members="328" start_time="1940-05-26 15:21:43" end_time="1940-06-04 18:00:00" />
+        </Task>
+        <Task color="5">
+            <TaskInfo name="德国进攻苏联(巴巴罗萨计划)" id="4" leader="335" task_describe="" members="335" start_time="1941-06-22 15:22:39" end_time="1942-01-07 15:22:39" />
+        </Task>
+        <Task color="8">
+            <TaskInfo name="莫斯科保卫战" id="5" leader="329" task_describe="" members="336,329" start_time="1941-09-06 15:23:32" end_time="1942-10-07 15:23:32" />
+            <TaskCard name="Action" id="327681" leader="336" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1941-09-06 15:23:32" end_time="1942-10-07 15:23:32" />
+        </Task>
+        <Task color="1">
+            <TaskInfo name="日美太平洋战争" id="6" leader="337" task_describe="" members="337,340,331" start_time="1941-12-07 15:24:08" end_time="1945-09-09 15:24:08" />
+            <TaskCard name="偷袭珍珠港" id="393217" leader="340" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1941-12-07 08:24:08" end_time="1941-12-09 18:00:00" />
+            <TaskCard name="中途岛海战" id="393218" leader="340" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1942-06-04 15:24:08" end_time="1942-06-07 15:24:08" />
+            <TaskCard name="硫磺岛战役" id="393219" leader="341" plan_days="30" plan_hours="0" state="3" score="0" difficulty="1" start_time="1945-02-19 09:00:00" end_time="1945-03-27 18:00:00" />
+            <TaskCard name="冲绳战役 " id="393220" leader="341" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1945-04-12 09:00:00" end_time="1945-06-18 18:00:00" />
+        </Task>
+        <Task color="8">
+            <TaskInfo name="斯大林格勒战役" id="7" leader="327" task_describe="" members="327" start_time="1942-07-17 15:25:17" end_time="1943-02-16 15:25:17" />
+        </Task>
+        <Task color="8">
+            <TaskInfo name="库尔斯克战役" id="8" leader="329" task_describe="" members="329" start_time="1943-07-05 15:25:44" end_time="1943-08-27 15:25:44" />
+        </Task>
+        <Task color="4">
+            <TaskInfo name="北非战场（西部沙漠战役）" id="9" leader="334" task_describe="" members="334,333" start_time="1940-06-10 15:30:00" end_time="1943-05-16 15:30:00" />
+        </Task>
+        <Task color="9">
+            <TaskInfo name="长沙会战" id="10" leader="338" task_describe="" members="338,339" start_time="1939-09-16 15:36:41" end_time="1944-08-16 15:36:41" />
+            <TaskCard name="第一次长沙战役" id="655361" leader="338" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1939-09-14 15:36:41" end_time="1939-10-13 18:00:00" />
+            <TaskCard name="第2次长沙战役" id="655362" leader="338" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1941-09-07" end_time="1941-10-11 18:00:00" />
+            <TaskCard name="第3次长沙战役" id="655363" leader="338" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1941-12-23" end_time="1942-01-15 18:00:00" />
+            <TaskCard name="第4次长沙战役" id="655364" leader="338" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="1944-05-27" end_time="1944-08-08 02:23:19" />
+        </Task>
+    </Tasks>
+    <Events />
+    <Milestones>
+        <Milestone name="德国进攻波兰" id="1" time="1939-09-01 10:00:00" memo="" />
+        <Milestone name="法国投降" id="2" time="1940-06-22 10:00:00" memo="" />
+        <Milestone name="莫斯科保卫战" id="3" time="1941-09-30 10:00:00" memo="" />
+        <Milestone name="偷袭珍珠港" id="4" time="1941-12-07 10:00:00" memo="" />
+        <Milestone name="转折点斯大林格勒战役" id="5" time="1943-02-15 10:00:00" memo="" />
+        <Milestone name="诺曼底登陆" id="6" time="1944-06-06 10:00:00" memo="" />
+        <Milestone name="雅尔塔会议" id="7" time="1945-02-08 10:00:00" memo="" />
+        <Milestone name="意大利投降" id="8" time="1943-09-08 10:00:00" memo="" />
+        <Milestone name="德国投降" id="9" time="1945-05-08 10:00:00" memo="" />
+        <Milestone name="原子弹轰炸广岛" id="10" time="1945-08-06 10:00:00" memo="" />
+        <Milestone name="日本无条件投降" id="11" time="1945-08-15 10:00:00" memo="" />
+    </Milestones>
+</NProject>

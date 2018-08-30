@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23FCFB3A-6D76-4AFC-A139-399136794784}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>HMI</RootNamespace>
+    <ProjectName>HMIEngine</ProjectName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+    <Import Project="..\skia_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+    <Import Project="..\skia_release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\lib\debugvc\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\releasevc\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include;../Interface/;../Interface/RenderingEngine;../Interface/HMIEngine;../TINYXML/Include;../Interface/BaseClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4244;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\RenderingEngine\Export\lib\debug;..\..\skia\out\debug\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\debugvc</Message>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./Include;../Interface;../Interface/RenderingEngine;../Interface/HMIEngine;../TINYXML/Include;../Interface/BaseClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <DisableSpecificWarnings>4244;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\RenderingEngine\Export\lib\release;..\..\skia\out\release\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\releasevc</Message>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>libboost_timer-vc100-mt-s-1_51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\skia\out\Release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Interface\BaseClass\CharSet.h" />
+    <ClInclude Include="..\Interface\BaseClass\FilePath.h" />
+    <ClInclude Include="..\Interface\BaseClass\KFile.h" />
+    <ClInclude Include="..\Interface\BaseClass\KGlobalFunction.h" />
+    <ClInclude Include="..\Interface\BaseClass\KNFile.h" />
+    <ClInclude Include="..\Interface\BaseClass\KProfile.h" />
+    <ClInclude Include="..\Interface\HMIEngine\AnimationThread.h" />
+    <ClInclude Include="..\Interface\HMIEngine\DataSync.h" />
+    <ClInclude Include="..\Interface\HMIEngine\K9PatchImageDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KAreaBlurDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KBitmapTextDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KButtonView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KCheckboxView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KColorDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KColorTextDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KConfigManager.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KEditView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KFontManager.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KGalleryView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KGestureDetector.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KImageDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KLayer.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KListView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KMenuView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KMoveableView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KPathEffectDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KProcessView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KSlideView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KStaticTextView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KStringManager.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KSvgAnalyzing.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KSwitchButtonView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KTextMultiLineDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KTextView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KTimer.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KTipView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KViewGroup.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KScreen.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KShapeDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KTextDrawable.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\KWaveEffectView.h" />
+    <ClInclude Include="..\Interface\HMIEngine\mainforwindows.h" />
+    <ClInclude Include="..\Interface\HMIEngine\message.h" />
+    <ClInclude Include="..\Interface\HMIEngine\NUIAnimation.h" />
+    <ClInclude Include="..\Interface\HMIEngine\sigslot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Interface\BaseClass\CharSet.cpp" />
+    <ClCompile Include="..\Interface\BaseClass\error.cpp" />
+    <ClCompile Include="..\Interface\BaseClass\FilePath.cpp" />
+    <ClCompile Include="..\Interface\BaseClass\KFile.cpp" />
+    <ClCompile Include="..\Interface\BaseClass\KGlobalFunction.cpp" />
+    <ClCompile Include="..\Interface\BaseClass\KNFile.cpp" />
+    <ClCompile Include="..\Interface\BaseClass\KProfile.cpp" />
+    <ClCompile Include="Src\AnimationThread.cpp" />
+    <ClCompile Include="Src\DataSync.cpp" />
+    <ClCompile Include="Src\Easing.cpp" />
+    <ClCompile Include="Src\K9PatchImageDrawable.cpp" />
+    <ClCompile Include="Src\KAreaBlurDrawable.cpp" />
+    <ClCompile Include="Src\KBitmapTextDrawable.cpp" />
+    <ClCompile Include="Src\KButtonView.cpp" />
+    <ClCompile Include="Src\KCheckboxView.cpp" />
+    <ClCompile Include="Src\KColorDrawable.cpp" />
+    <ClCompile Include="Src\KColorTextDrawable.cpp" />
+    <ClCompile Include="Src\KConfigManager.cpp" />
+    <ClCompile Include="Src\KDrawable.cpp" />
+    <ClCompile Include="Src\KEasingCurve.cpp" />
+    <ClCompile Include="Src\KEditView.cpp" />
+    <ClCompile Include="Src\KFontManager.cpp" />
+    <ClCompile Include="Src\KGalleryView.cpp" />
+    <ClCompile Include="Src\KGestureDetector.cpp" />
+    <ClCompile Include="Src\KImageDrawable.cpp" />
+    <ClCompile Include="Src\KKoteiMessage.cpp" />
+    <ClCompile Include="Src\KLayer.cpp" />
+    <ClCompile Include="Src\KListView.cpp" />
+    <ClCompile Include="Src\KMenuView.cpp" />
+    <ClCompile Include="Src\KMoveableView.cpp" />
+    <ClCompile Include="Src\KPathEffectDrawable.cpp" />
+    <ClCompile Include="Src\KProcessView.cpp" />
+    <ClCompile Include="Src\KSlideView.cpp" />
+    <ClCompile Include="Src\KStaticTextView.cpp" />
+    <ClCompile Include="Src\KStringManager.cpp" />
+    <ClCompile Include="Src\KSurfaceManager.cpp" />
+    <ClCompile Include="Src\KSvgAnalyzing.cpp" />
+    <ClCompile Include="Src\KSwitchButtonView.cpp" />
+    <ClCompile Include="Src\KTextMultiLineDrawable.cpp" />
+    <ClCompile Include="Src\KTextView.cpp" />
+    <ClCompile Include="Src\KTimer.cpp" />
+    <ClCompile Include="Src\KTipView.cpp" />
+    <ClCompile Include="Src\KViewGroup.cpp" />
+    <ClCompile Include="Src\KScreen.cpp" />
+    <ClCompile Include="Src\KShapeDrawable.cpp" />
+    <ClCompile Include="Src\KTextDrawable.cpp" />
+    <ClCompile Include="Src\KView.cpp" />
+    <ClCompile Include="Src\KWaveEffectDrawable.cpp" />
+    <ClCompile Include="Src\KWaveEffectView.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\mainforlinux.cpp" />
+    <ClCompile Include="Src\mainforwindows.cpp" />
+    <ClCompile Include="Src\message.cpp" />
+    <ClCompile Include="Src\messageforlinux.cpp" />
+    <ClCompile Include="Src\messageforwindows.cpp" />
+    <ClCompile Include="Src\NUIAnimation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RenderingEngine\RenderingEngine.vcxproj">
+      <Project>{ba933548-4503-4428-bc87-02e916809aeb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

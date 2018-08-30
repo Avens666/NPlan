@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30E57D8F-365F-4BEE-A79A-24C01FE59DD4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NPlan</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+    <Import Project="..\skia_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+    <Import Project="..\skia_release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\</OutDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include;../Interface;../Interface/HMIEngine;../Interface/RenderingEngine;./view;../TINYXML/Include;../Interface/BaseClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../lib/debugvc;../../skia/out/debug/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;usp10.lib;windowscodecs.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;RenderingEngine.lib;HMIEngine.lib;TINYXML.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include;../Interface;../Interface/HMIEngine;../Interface/RenderingEngine;./view;../TINYXML/Include;../Interface/BaseClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4244;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;RenderingEngine.lib;HMIEngine.lib;TINYXML.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../lib/releasevc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;msvcprt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="file\excel9.tlh" />
+    <None Include="file\excel9.tli" />
+    <None Include="file\mso9.tlh" />
+    <None Include="file\mso9.tli" />
+    <None Include="file\VBE6EXT.tlh" />
+    <None Include="file\VBE6EXT.tli" />
+    <None Include="NPlan.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="file\NGlobleResourcePool.h" />
+    <ClInclude Include="file\NGlobleTaskBoard.h" />
+    <ClInclude Include="file\NProjectBaseFile.h" />
+    <ClInclude Include="file\NProjectBaseInfo.h" />
+    <ClInclude Include="file\NProjectCalendar.h" />
+    <ClInclude Include="file\NProjectData.h" />
+    <ClInclude Include="file\NProjectDataStruct.h" />
+    <ClInclude Include="file\NProjectEvent.h" />
+    <ClInclude Include="file\NProjectExcelData.h" />
+    <ClInclude Include="file\NProjectMileStone.h" />
+    <ClInclude Include="file\NProjectMPPXMLData.h" />
+    <ClInclude Include="file\NProjectObject.h" />
+    <ClInclude Include="file\NProjectResActivity.h" />
+    <ClInclude Include="file\NProjectResGroup.h" />
+    <ClInclude Include="file\NProjectResource.h" />
+    <ClInclude Include="file\NProjectResourcePool.h" />
+    <ClInclude Include="file\NProjectTask.h" />
+    <ClInclude Include="file\NProjectTaskBoard.h" />
+    <ClInclude Include="file\NProjectTaskBoardItem.h" />
+    <ClInclude Include="file\NProjectTaskCard.h" />
+    <ClInclude Include="file\NProjectWarning.h" />
+    <ClInclude Include="file\NProjectXLSXMLData.h" />
+    <ClInclude Include="file\NProjectXMLData.h" />
+    <ClInclude Include="file\utility.h" />
+    <ClInclude Include="file\XExcel.h" />
+    <ClInclude Include="KMACInfo.h" />
+    <ClInclude Include="KMD5.h" />
+    <ClInclude Include="manager\KConfigManager.h" />
+    <ClInclude Include="manager\KProjectManager.h" />
+    <ClInclude Include="manager\KStringManager.h" />
+    <ClInclude Include="NPlan.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserCountSuggestion.h" />
+    <ClInclude Include="view\Calendar.h" />
+    <ClInclude Include="view\KResourceGroupView.h" />
+    <ClInclude Include="view\MilestoneEditView.h" />
+    <ClInclude Include="view\NAboutView.h" />
+    <ClInclude Include="view\NBottomMenuView.h" />
+    <ClInclude Include="view\NBottomView.h" />
+    <ClInclude Include="view\NCalendarDayView.h" />
+    <ClInclude Include="view\NCalendarPage.h" />
+    <ClInclude Include="view\NDragStaffView.h" />
+    <ClInclude Include="view\NGridView.h" />
+    <ClInclude Include="view\NMainView.h" />
+    <ClInclude Include="view\NMemberSourceView.h" />
+    <ClInclude Include="view\NMenu.h" />
+    <ClInclude Include="view\NMessageBoxView.h" />
+    <ClInclude Include="view\NNormalSilderView.h" />
+    <ClInclude Include="view\NPlanAppView.h" />
+    <ClInclude Include="view\NProjectEditPage.h" />
+    <ClInclude Include="view\NProjectPage.h" />
+    <ClInclude Include="view\NProjectView.h" />
+    <ClInclude Include="view\NPromptView.h" />
+    <ClInclude Include="view\NPublicSourceView.h" />
+    <ClInclude Include="view\NResourceGroupView.h" />
+    <ClInclude Include="view\NScaleSilderView.h" />
+    <ClInclude Include="view\NSilderCursorView.h" />
+    <ClInclude Include="view\NSlideView.h" />
+    <ClInclude Include="view\NStoryBoardPage.h" />
+    <ClInclude Include="view\NSwicthImagePage.h" />
+    <ClInclude Include="view\NTaskListItem.h" />
+    <ClInclude Include="view\NTaskSourceView.h" />
+    <ClInclude Include="view\NTimeBarPage.h" />
+    <ClInclude Include="view\NSettingView.h" />
+    <ClInclude Include="view\TaskBarView.h" />
+    <ClInclude Include="view\TaskView.h" />
+    <ClInclude Include="view\TimeBarView.h" />
+    <ClInclude Include="view\TimeLine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="file\NGlobleResourcePool.cpp" />
+    <ClCompile Include="file\NGlobleTaskBoard.cpp" />
+    <ClCompile Include="file\NProjectBaseFile.cpp" />
+    <ClCompile Include="file\NProjectBaseInfo.cpp" />
+    <ClCompile Include="file\NProjectCalendar.cpp" />
+    <ClCompile Include="file\NProjectData.cpp" />
+    <ClCompile Include="file\NProjectEvent.cpp" />
+    <ClCompile Include="file\NProjectExcelData.cpp" />
+    <ClCompile Include="file\NProjectMileStone.cpp" />
+    <ClCompile Include="file\NProjectMPPXMLData.cpp" />
+    <ClCompile Include="file\NProjectObject.cpp" />
+    <ClCompile Include="file\NProjectResActivity.cpp" />
+    <ClCompile Include="file\NProjectResGroup.cpp" />
+    <ClCompile Include="file\NProjectResource.cpp" />
+    <ClCompile Include="file\NprojectResourcePool.cpp" />
+    <ClCompile Include="file\NProjectTask.cpp" />
+    <ClCompile Include="file\NProjectTaskBoard.cpp" />
+    <ClCompile Include="file\NProjectTaskBoardItem.cpp" />
+    <ClCompile Include="file\NProjectTaskCard.cpp" />
+    <ClCompile Include="file\NProjectWarning.cpp" />
+    <ClCompile Include="file\NProjectXLSXMLData.cpp" />
+    <ClCompile Include="file\NProjectXMLData.cpp" />
+    <ClCompile Include="file\utility.cpp" />
+    <ClCompile Include="file\XExcel.cpp" />
+    <ClCompile Include="KMACInfo.cpp" />
+    <ClCompile Include="KMD5.cpp" />
+    <ClCompile Include="manager\KProjectManager.cpp" />
+    <ClCompile Include="manager\KStringManager.cpp" />
+    <ClCompile Include="NPlan.cpp" />
+    <ClCompile Include="NPlan_android.cpp" />
+    <ClCompile Include="NPlan_ios.cpp" />
+    <ClCompile Include="NPlan_qt.cpp" />
+    <ClCompile Include="NPlan_win32.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UserCountSuggestion.cpp" />
+    <ClCompile Include="view\Calendar.cpp" />
+    <ClCompile Include="view\KListViewEx.cpp" />
+    <ClCompile Include="view\MilestoneEditView.cpp" />
+    <ClCompile Include="view\NAboutView.cpp" />
+    <ClCompile Include="view\NBottomMenuView.cpp" />
+    <ClCompile Include="view\NBottomView.cpp" />
+    <ClCompile Include="view\NCalendarDayView.cpp" />
+    <ClCompile Include="view\NCalendarPage.cpp" />
+    <ClCompile Include="view\NDragStaffView.cpp" />
+    <ClCompile Include="view\NGridView.cpp" />
+    <ClCompile Include="view\NMainView.cpp" />
+    <ClCompile Include="view\NMemberSourceView.cpp" />
+    <ClCompile Include="view\NMenu.cpp" />
+    <ClCompile Include="view\NMessageBoxView.cpp" />
+    <ClCompile Include="view\NMindMapView.cpp" />
+    <ClCompile Include="view\NNormalSilderView.cpp" />
+    <ClCompile Include="view\NPlanAppView.cpp" />
+    <ClCompile Include="view\NProjectEditPage.cpp" />
+    <ClCompile Include="view\NProjectPage.cpp" />
+    <ClCompile Include="view\NProjectResourceView.cpp" />
+    <ClCompile Include="view\NProjectView.cpp" />
+    <ClCompile Include="view\NPromptView.cpp" />
+    <ClCompile Include="view\NPublicSourceView.cpp" />
+    <ClCompile Include="view\NResourceGroupView.cpp" />
+    <ClCompile Include="view\NScaleSilderView.cpp" />
+    <ClCompile Include="view\NSilderCursorView.cpp" />
+    <ClCompile Include="view\NSlideView.cpp" />
+    <ClCompile Include="view\NStaffView.cpp" />
+    <ClCompile Include="view\NStoryBoardPage.cpp" />
+    <ClCompile Include="view\NSwicthImagePage.cpp" />
+    <ClCompile Include="view\NTaskListItem.cpp" />
+    <ClCompile Include="view\NTaskSourceView.cpp" />
+    <ClCompile Include="view\NTimeBarPage.cpp" />
+    <ClCompile Include="view\NSettingView.cpp" />
+    <ClCompile Include="view\TaskBarView.cpp" />
+    <ClCompile Include="view\TaskView.cpp" />
+    <ClCompile Include="view\TimeBarView.cpp" />
+    <ClCompile Include="view\TimeLine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NPlan.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

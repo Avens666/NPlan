@@ -1,0 +1,5515 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.50727.42 (c2b20069).
+//
+// e:\mywork\testwork\arcengine92\test1\debug\mso9.tli
+//
+// Wrapper implementations for Win32 type library MS_DLL/MSO9.DLL
+// compiler-generated file created 02/06/07 at 15:46:10 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IAccessible wrapper method implementations
+//
+
+inline IDispatchPtr IAccessible::GetaccParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_accParent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long IAccessible::GetaccChildCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_accChildCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IDispatchPtr IAccessible::GetaccChild ( const _variant_t & varChild ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_accChild(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline _bstr_t IAccessible::GetaccName ( const _variant_t & varChild ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_accName(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAccessible::GetaccValue ( const _variant_t & varChild ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_accValue(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAccessible::GetaccDescription ( const _variant_t & varChild ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_accDescription(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t IAccessible::GetaccRole ( const _variant_t & varChild ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_accRole(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IAccessible::GetaccState ( const _variant_t & varChild ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_accState(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t IAccessible::GetaccHelp ( const _variant_t & varChild ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_accHelp(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IAccessible::GetaccHelpTopic ( BSTR * pszHelpFile, const _variant_t & varChild ) {
+    long _result = 0;
+    HRESULT _hr = get_accHelpTopic(pszHelpFile, varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAccessible::GetaccKeyboardShortcut ( const _variant_t & varChild ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_accKeyboardShortcut(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t IAccessible::GetaccFocus ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_accFocus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IAccessible::GetaccSelection ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_accSelection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t IAccessible::GetaccDefaultAction ( const _variant_t & varChild ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_accDefaultAction(varChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAccessible::accSelect ( long flagsSelect, const _variant_t & varChild ) {
+    HRESULT _hr = raw_accSelect(flagsSelect, varChild);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAccessible::accLocation ( long * pxLeft, long * pyTop, long * pcxWidth, long * pcyHeight, const _variant_t & varChild ) {
+    HRESULT _hr = raw_accLocation(pxLeft, pyTop, pcxWidth, pcyHeight, varChild);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IAccessible::accNavigate ( long navDir, const _variant_t & varStart ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_accNavigate(navDir, varStart, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IAccessible::accHitTest ( long xLeft, long yTop ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_accHitTest(xLeft, yTop, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT IAccessible::accDoDefaultAction ( const _variant_t & varChild ) {
+    HRESULT _hr = raw_accDoDefaultAction(varChild);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IAccessible::PutaccName ( const _variant_t & varChild, _bstr_t pszName ) {
+    HRESULT _hr = put_accName(varChild, pszName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IAccessible::PutaccValue ( const _variant_t & varChild, _bstr_t pszValue ) {
+    HRESULT _hr = put_accValue(varChild, pszValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _IMsoDispObj wrapper method implementations
+//
+
+inline IDispatchPtr _IMsoDispObj::GetApplication ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Application(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long _IMsoDispObj::GetCreator ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Creator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface _IMsoOleAccDispObj wrapper method implementations
+//
+
+inline IDispatchPtr _IMsoOleAccDispObj::GetApplication ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Application(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long _IMsoOleAccDispObj::GetCreator ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Creator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface Adjustments wrapper method implementations
+//
+
+inline IDispatchPtr Adjustments::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline int Adjustments::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float Adjustments::GetItem ( int Index ) {
+    float _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Adjustments::PutItem ( int Index, float Val ) {
+    HRESULT _hr = put_Item(Index, Val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface CalloutFormat wrapper method implementations
+//
+
+inline IDispatchPtr CalloutFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT CalloutFormat::AutomaticLength ( ) {
+    HRESULT _hr = raw_AutomaticLength();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CalloutFormat::CustomDrop ( float Drop ) {
+    HRESULT _hr = raw_CustomDrop(Drop);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CalloutFormat::CustomLength ( float Length ) {
+    HRESULT _hr = raw_CustomLength(Length);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CalloutFormat::PresetDrop ( enum MsoCalloutDropType DropType ) {
+    HRESULT _hr = raw_PresetDrop(DropType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum MsoTriState CalloutFormat::GetAccent ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Accent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CalloutFormat::PutAccent ( enum MsoTriState Accent ) {
+    HRESULT _hr = put_Accent(Accent);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoCalloutAngleType CalloutFormat::GetAngle ( ) {
+    enum MsoCalloutAngleType _result;
+    HRESULT _hr = get_Angle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CalloutFormat::PutAngle ( enum MsoCalloutAngleType Angle ) {
+    HRESULT _hr = put_Angle(Angle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState CalloutFormat::GetAutoAttach ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_AutoAttach(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CalloutFormat::PutAutoAttach ( enum MsoTriState AutoAttach ) {
+    HRESULT _hr = put_AutoAttach(AutoAttach);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState CalloutFormat::GetAutoLength ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_AutoLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoTriState CalloutFormat::GetBorder ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Border(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CalloutFormat::PutBorder ( enum MsoTriState Border ) {
+    HRESULT _hr = put_Border(Border);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float CalloutFormat::GetDrop ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Drop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoCalloutDropType CalloutFormat::GetDropType ( ) {
+    enum MsoCalloutDropType _result;
+    HRESULT _hr = get_DropType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float CalloutFormat::GetGap ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Gap(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CalloutFormat::PutGap ( float Gap ) {
+    HRESULT _hr = put_Gap(Gap);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float CalloutFormat::GetLength ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoCalloutType CalloutFormat::GetType ( ) {
+    enum MsoCalloutType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CalloutFormat::PutType ( enum MsoCalloutType Type ) {
+    HRESULT _hr = put_Type(Type);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ColorFormat wrapper method implementations
+//
+
+inline IDispatchPtr ColorFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline MsoRGBType ColorFormat::GetMSRBG ( ) {
+    MsoRGBType _result;
+    HRESULT _hr = get_MSRBG(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ColorFormat::PutMSRBG ( MsoRGBType MSRBG ) {
+    HRESULT _hr = put_MSRBG(MSRBG);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ColorFormat::GetSchemeColor ( ) {
+    int _result = 0;
+    HRESULT _hr = get_SchemeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ColorFormat::PutSchemeColor ( int SchemeColor ) {
+    HRESULT _hr = put_SchemeColor(SchemeColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoColorType ColorFormat::GetType ( ) {
+    enum MsoColorType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface FillFormat wrapper method implementations
+//
+
+inline IDispatchPtr FillFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT FillFormat::Background ( ) {
+    HRESULT _hr = raw_Background();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::OneColorGradient ( enum MsoGradientStyle Style, int Variant, float Degree ) {
+    HRESULT _hr = raw_OneColorGradient(Style, Variant, Degree);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::Patterned ( enum MsoPatternType Pattern ) {
+    HRESULT _hr = raw_Patterned(Pattern);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::PresetGradient ( enum MsoGradientStyle Style, int Variant, enum MsoPresetGradientType PresetGradientType ) {
+    HRESULT _hr = raw_PresetGradient(Style, Variant, PresetGradientType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::PresetTextured ( enum MsoPresetTexture PresetTexture ) {
+    HRESULT _hr = raw_PresetTextured(PresetTexture);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::Solid ( ) {
+    HRESULT _hr = raw_Solid();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::TwoColorGradient ( enum MsoGradientStyle Style, int Variant ) {
+    HRESULT _hr = raw_TwoColorGradient(Style, Variant);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::UserPicture ( _bstr_t PictureFile ) {
+    HRESULT _hr = raw_UserPicture(PictureFile);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT FillFormat::UserTextured ( _bstr_t TextureFile ) {
+    HRESULT _hr = raw_UserTextured(TextureFile);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ColorFormatPtr FillFormat::GetBackColor ( ) {
+    struct ColorFormat * _result = 0;
+    HRESULT _hr = get_BackColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColorFormatPtr(_result, false);
+}
+
+inline void FillFormat::PutBackColor ( struct ColorFormat * BackColor ) {
+    HRESULT _hr = put_BackColor(BackColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ColorFormatPtr FillFormat::GetForeColor ( ) {
+    struct ColorFormat * _result = 0;
+    HRESULT _hr = get_ForeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColorFormatPtr(_result, false);
+}
+
+inline void FillFormat::PutForeColor ( struct ColorFormat * ForeColor ) {
+    HRESULT _hr = put_ForeColor(ForeColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoGradientColorType FillFormat::GetGradientColorType ( ) {
+    enum MsoGradientColorType _result;
+    HRESULT _hr = get_GradientColorType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float FillFormat::GetGradientDegree ( ) {
+    float _result = 0;
+    HRESULT _hr = get_GradientDegree(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoGradientStyle FillFormat::GetGradientStyle ( ) {
+    enum MsoGradientStyle _result;
+    HRESULT _hr = get_GradientStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int FillFormat::GetGradientVariant ( ) {
+    int _result = 0;
+    HRESULT _hr = get_GradientVariant(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoPatternType FillFormat::GetPattern ( ) {
+    enum MsoPatternType _result;
+    HRESULT _hr = get_Pattern(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoPresetGradientType FillFormat::GetPresetGradientType ( ) {
+    enum MsoPresetGradientType _result;
+    HRESULT _hr = get_PresetGradientType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoPresetTexture FillFormat::GetPresetTexture ( ) {
+    enum MsoPresetTexture _result;
+    HRESULT _hr = get_PresetTexture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t FillFormat::GetTextureName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TextureName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum MsoTextureType FillFormat::GetTextureType ( ) {
+    enum MsoTextureType _result;
+    HRESULT _hr = get_TextureType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float FillFormat::GetTransparency ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Transparency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void FillFormat::PutTransparency ( float Transparency ) {
+    HRESULT _hr = put_Transparency(Transparency);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoFillType FillFormat::GetType ( ) {
+    enum MsoFillType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoTriState FillFormat::GetVisible ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void FillFormat::PutVisible ( enum MsoTriState Visible ) {
+    HRESULT _hr = put_Visible(Visible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface LineFormat wrapper method implementations
+//
+
+inline IDispatchPtr LineFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline ColorFormatPtr LineFormat::GetBackColor ( ) {
+    struct ColorFormat * _result = 0;
+    HRESULT _hr = get_BackColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColorFormatPtr(_result, false);
+}
+
+inline void LineFormat::PutBackColor ( struct ColorFormat * BackColor ) {
+    HRESULT _hr = put_BackColor(BackColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoArrowheadLength LineFormat::GetBeginArrowheadLength ( ) {
+    enum MsoArrowheadLength _result;
+    HRESULT _hr = get_BeginArrowheadLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutBeginArrowheadLength ( enum MsoArrowheadLength BeginArrowheadLength ) {
+    HRESULT _hr = put_BeginArrowheadLength(BeginArrowheadLength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoArrowheadStyle LineFormat::GetBeginArrowheadStyle ( ) {
+    enum MsoArrowheadStyle _result;
+    HRESULT _hr = get_BeginArrowheadStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutBeginArrowheadStyle ( enum MsoArrowheadStyle BeginArrowheadStyle ) {
+    HRESULT _hr = put_BeginArrowheadStyle(BeginArrowheadStyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoArrowheadWidth LineFormat::GetBeginArrowheadWidth ( ) {
+    enum MsoArrowheadWidth _result;
+    HRESULT _hr = get_BeginArrowheadWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutBeginArrowheadWidth ( enum MsoArrowheadWidth BeginArrowheadWidth ) {
+    HRESULT _hr = put_BeginArrowheadWidth(BeginArrowheadWidth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoLineDashStyle LineFormat::GetDashStyle ( ) {
+    enum MsoLineDashStyle _result;
+    HRESULT _hr = get_DashStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutDashStyle ( enum MsoLineDashStyle DashStyle ) {
+    HRESULT _hr = put_DashStyle(DashStyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoArrowheadLength LineFormat::GetEndArrowheadLength ( ) {
+    enum MsoArrowheadLength _result;
+    HRESULT _hr = get_EndArrowheadLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutEndArrowheadLength ( enum MsoArrowheadLength EndArrowheadLength ) {
+    HRESULT _hr = put_EndArrowheadLength(EndArrowheadLength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoArrowheadStyle LineFormat::GetEndArrowheadStyle ( ) {
+    enum MsoArrowheadStyle _result;
+    HRESULT _hr = get_EndArrowheadStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutEndArrowheadStyle ( enum MsoArrowheadStyle EndArrowheadStyle ) {
+    HRESULT _hr = put_EndArrowheadStyle(EndArrowheadStyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoArrowheadWidth LineFormat::GetEndArrowheadWidth ( ) {
+    enum MsoArrowheadWidth _result;
+    HRESULT _hr = get_EndArrowheadWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutEndArrowheadWidth ( enum MsoArrowheadWidth EndArrowheadWidth ) {
+    HRESULT _hr = put_EndArrowheadWidth(EndArrowheadWidth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ColorFormatPtr LineFormat::GetForeColor ( ) {
+    struct ColorFormat * _result = 0;
+    HRESULT _hr = get_ForeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColorFormatPtr(_result, false);
+}
+
+inline void LineFormat::PutForeColor ( struct ColorFormat * ForeColor ) {
+    HRESULT _hr = put_ForeColor(ForeColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPatternType LineFormat::GetPattern ( ) {
+    enum MsoPatternType _result;
+    HRESULT _hr = get_Pattern(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutPattern ( enum MsoPatternType Pattern ) {
+    HRESULT _hr = put_Pattern(Pattern);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoLineStyle LineFormat::GetStyle ( ) {
+    enum MsoLineStyle _result;
+    HRESULT _hr = get_Style(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutStyle ( enum MsoLineStyle Style ) {
+    HRESULT _hr = put_Style(Style);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float LineFormat::GetTransparency ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Transparency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutTransparency ( float Transparency ) {
+    HRESULT _hr = put_Transparency(Transparency);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState LineFormat::GetVisible ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutVisible ( enum MsoTriState Visible ) {
+    HRESULT _hr = put_Visible(Visible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float LineFormat::GetWeight ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Weight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void LineFormat::PutWeight ( float Weight ) {
+    HRESULT _hr = put_Weight(Weight);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ShapeNode wrapper method implementations
+//
+
+inline IDispatchPtr ShapeNode::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline enum MsoEditingType ShapeNode::GetEditingType ( ) {
+    enum MsoEditingType _result;
+    HRESULT _hr = get_EditingType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ShapeNode::GetPoints ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Points(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum MsoSegmentType ShapeNode::GetSegmentType ( ) {
+    enum MsoSegmentType _result;
+    HRESULT _hr = get_SegmentType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ShapeNodes wrapper method implementations
+//
+
+inline IDispatchPtr ShapeNodes::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline int ShapeNodes::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ShapeNodePtr ShapeNodes::Item ( const _variant_t & Index ) {
+    struct ShapeNode * _result = 0;
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapeNodePtr(_result, false);
+}
+
+inline IUnknownPtr ShapeNodes::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline HRESULT ShapeNodes::Delete ( int Index ) {
+    HRESULT _hr = raw_Delete(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeNodes::Insert ( int Index, enum MsoSegmentType SegmentType, enum MsoEditingType EditingType, float X1, float Y1, float X2, float Y2, float X3, float Y3 ) {
+    HRESULT _hr = raw_Insert(Index, SegmentType, EditingType, X1, Y1, X2, Y2, X3, Y3);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeNodes::SetEditingType ( int Index, enum MsoEditingType EditingType ) {
+    HRESULT _hr = raw_SetEditingType(Index, EditingType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeNodes::SetPosition ( int Index, float X1, float Y1 ) {
+    HRESULT _hr = raw_SetPosition(Index, X1, Y1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeNodes::SetSegmentType ( int Index, enum MsoSegmentType SegmentType ) {
+    HRESULT _hr = raw_SetSegmentType(Index, SegmentType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface PictureFormat wrapper method implementations
+//
+
+inline IDispatchPtr PictureFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT PictureFormat::IncrementBrightness ( float Increment ) {
+    HRESULT _hr = raw_IncrementBrightness(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT PictureFormat::IncrementContrast ( float Increment ) {
+    HRESULT _hr = raw_IncrementContrast(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline float PictureFormat::GetBrightness ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Brightness(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutBrightness ( float Brightness ) {
+    HRESULT _hr = put_Brightness(Brightness);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPictureColorType PictureFormat::GetColorType ( ) {
+    enum MsoPictureColorType _result;
+    HRESULT _hr = get_ColorType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutColorType ( enum MsoPictureColorType ColorType ) {
+    HRESULT _hr = put_ColorType(ColorType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float PictureFormat::GetContrast ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Contrast(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutContrast ( float Contrast ) {
+    HRESULT _hr = put_Contrast(Contrast);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float PictureFormat::GetCropBottom ( ) {
+    float _result = 0;
+    HRESULT _hr = get_CropBottom(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutCropBottom ( float CropBottom ) {
+    HRESULT _hr = put_CropBottom(CropBottom);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float PictureFormat::GetCropLeft ( ) {
+    float _result = 0;
+    HRESULT _hr = get_CropLeft(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutCropLeft ( float CropLeft ) {
+    HRESULT _hr = put_CropLeft(CropLeft);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float PictureFormat::GetCropRight ( ) {
+    float _result = 0;
+    HRESULT _hr = get_CropRight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutCropRight ( float CropRight ) {
+    HRESULT _hr = put_CropRight(CropRight);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float PictureFormat::GetCropTop ( ) {
+    float _result = 0;
+    HRESULT _hr = get_CropTop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutCropTop ( float CropTop ) {
+    HRESULT _hr = put_CropTop(CropTop);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline MsoRGBType PictureFormat::GetTransparencyColor ( ) {
+    MsoRGBType _result;
+    HRESULT _hr = get_TransparencyColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutTransparencyColor ( MsoRGBType TransparencyColor ) {
+    HRESULT _hr = put_TransparencyColor(TransparencyColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState PictureFormat::GetTransparentBackground ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_TransparentBackground(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void PictureFormat::PutTransparentBackground ( enum MsoTriState TransparentBackground ) {
+    HRESULT _hr = put_TransparentBackground(TransparentBackground);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ShadowFormat wrapper method implementations
+//
+
+inline IDispatchPtr ShadowFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT ShadowFormat::IncrementOffsetX ( float Increment ) {
+    HRESULT _hr = raw_IncrementOffsetX(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShadowFormat::IncrementOffsetY ( float Increment ) {
+    HRESULT _hr = raw_IncrementOffsetY(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ColorFormatPtr ShadowFormat::GetForeColor ( ) {
+    struct ColorFormat * _result = 0;
+    HRESULT _hr = get_ForeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColorFormatPtr(_result, false);
+}
+
+inline void ShadowFormat::PutForeColor ( struct ColorFormat * ForeColor ) {
+    HRESULT _hr = put_ForeColor(ForeColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState ShadowFormat::GetObscured ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Obscured(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShadowFormat::PutObscured ( enum MsoTriState Obscured ) {
+    HRESULT _hr = put_Obscured(Obscured);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float ShadowFormat::GetOffsetX ( ) {
+    float _result = 0;
+    HRESULT _hr = get_OffsetX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShadowFormat::PutOffsetX ( float OffsetX ) {
+    HRESULT _hr = put_OffsetX(OffsetX);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float ShadowFormat::GetOffsetY ( ) {
+    float _result = 0;
+    HRESULT _hr = get_OffsetY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShadowFormat::PutOffsetY ( float OffsetY ) {
+    HRESULT _hr = put_OffsetY(OffsetY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float ShadowFormat::GetTransparency ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Transparency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShadowFormat::PutTransparency ( float Transparency ) {
+    HRESULT _hr = put_Transparency(Transparency);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoShadowType ShadowFormat::GetType ( ) {
+    enum MsoShadowType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShadowFormat::PutType ( enum MsoShadowType Type ) {
+    HRESULT _hr = put_Type(Type);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState ShadowFormat::GetVisible ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShadowFormat::PutVisible ( enum MsoTriState Visible ) {
+    HRESULT _hr = put_Visible(Visible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Script wrapper method implementations
+//
+
+inline IDispatchPtr Script::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline _bstr_t Script::GetExtended ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Extended(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Script::PutExtended ( _bstr_t Extended ) {
+    HRESULT _hr = put_Extended(Extended);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Script::GetId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Id(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Script::PutId ( _bstr_t Id ) {
+    HRESULT _hr = put_Id(Id);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoScriptLanguage Script::GetLanguage ( ) {
+    enum MsoScriptLanguage _result;
+    HRESULT _hr = get_Language(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Script::PutLanguage ( enum MsoScriptLanguage Language ) {
+    HRESULT _hr = put_Language(Language);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoScriptLocation Script::GetLocation ( ) {
+    enum MsoScriptLocation _result;
+    HRESULT _hr = get_Location(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT Script::Delete ( ) {
+    HRESULT _hr = raw_Delete();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDispatchPtr Script::GetShape ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Shape(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline _bstr_t Script::GetScriptText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ScriptText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Script::PutScriptText ( _bstr_t Script ) {
+    HRESULT _hr = put_ScriptText(Script);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Scripts wrapper method implementations
+//
+
+inline IDispatchPtr Scripts::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long Scripts::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr Scripts::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline ScriptPtr Scripts::Item ( const _variant_t & Index ) {
+    struct Script * _result = 0;
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ScriptPtr(_result, false);
+}
+
+inline ScriptPtr Scripts::Add ( IDispatch * Anchor, enum MsoScriptLocation Location, enum MsoScriptLanguage Language, _bstr_t Id, _bstr_t Extended, _bstr_t ScriptText ) {
+    struct Script * _result = 0;
+    HRESULT _hr = raw_Add(Anchor, Location, Language, Id, Extended, ScriptText, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ScriptPtr(_result, false);
+}
+
+inline HRESULT Scripts::Delete ( ) {
+    HRESULT _hr = raw_Delete();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface TextEffectFormat wrapper method implementations
+//
+
+inline IDispatchPtr TextEffectFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT TextEffectFormat::ToggleVerticalText ( ) {
+    HRESULT _hr = raw_ToggleVerticalText();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum MsoTextEffectAlignment TextEffectFormat::GetAlignment ( ) {
+    enum MsoTextEffectAlignment _result;
+    HRESULT _hr = get_Alignment(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutAlignment ( enum MsoTextEffectAlignment Alignment ) {
+    HRESULT _hr = put_Alignment(Alignment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState TextEffectFormat::GetFontBold ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_FontBold(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutFontBold ( enum MsoTriState FontBold ) {
+    HRESULT _hr = put_FontBold(FontBold);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState TextEffectFormat::GetFontItalic ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_FontItalic(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutFontItalic ( enum MsoTriState FontItalic ) {
+    HRESULT _hr = put_FontItalic(FontItalic);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t TextEffectFormat::GetFontName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FontName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void TextEffectFormat::PutFontName ( _bstr_t FontName ) {
+    HRESULT _hr = put_FontName(FontName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float TextEffectFormat::GetFontSize ( ) {
+    float _result = 0;
+    HRESULT _hr = get_FontSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutFontSize ( float FontSize ) {
+    HRESULT _hr = put_FontSize(FontSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState TextEffectFormat::GetKernedPairs ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_KernedPairs(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutKernedPairs ( enum MsoTriState KernedPairs ) {
+    HRESULT _hr = put_KernedPairs(KernedPairs);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState TextEffectFormat::GetNormalizedHeight ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_NormalizedHeight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutNormalizedHeight ( enum MsoTriState NormalizedHeight ) {
+    HRESULT _hr = put_NormalizedHeight(NormalizedHeight);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPresetTextEffectShape TextEffectFormat::GetPresetShape ( ) {
+    enum MsoPresetTextEffectShape _result;
+    HRESULT _hr = get_PresetShape(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutPresetShape ( enum MsoPresetTextEffectShape PresetShape ) {
+    HRESULT _hr = put_PresetShape(PresetShape);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPresetTextEffect TextEffectFormat::GetPresetTextEffect ( ) {
+    enum MsoPresetTextEffect _result;
+    HRESULT _hr = get_PresetTextEffect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutPresetTextEffect ( enum MsoPresetTextEffect Preset ) {
+    HRESULT _hr = put_PresetTextEffect(Preset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState TextEffectFormat::GetRotatedChars ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_RotatedChars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutRotatedChars ( enum MsoTriState RotatedChars ) {
+    HRESULT _hr = put_RotatedChars(RotatedChars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t TextEffectFormat::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void TextEffectFormat::PutText ( _bstr_t Text ) {
+    HRESULT _hr = put_Text(Text);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float TextEffectFormat::GetTracking ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Tracking(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextEffectFormat::PutTracking ( float Tracking ) {
+    HRESULT _hr = put_Tracking(Tracking);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface TextFrame wrapper method implementations
+//
+
+inline IDispatchPtr TextFrame::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline float TextFrame::GetMarginBottom ( ) {
+    float _result = 0;
+    HRESULT _hr = get_MarginBottom(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextFrame::PutMarginBottom ( float MarginBottom ) {
+    HRESULT _hr = put_MarginBottom(MarginBottom);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float TextFrame::GetMarginLeft ( ) {
+    float _result = 0;
+    HRESULT _hr = get_MarginLeft(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextFrame::PutMarginLeft ( float MarginLeft ) {
+    HRESULT _hr = put_MarginLeft(MarginLeft);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float TextFrame::GetMarginRight ( ) {
+    float _result = 0;
+    HRESULT _hr = get_MarginRight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextFrame::PutMarginRight ( float MarginRight ) {
+    HRESULT _hr = put_MarginRight(MarginRight);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float TextFrame::GetMarginTop ( ) {
+    float _result = 0;
+    HRESULT _hr = get_MarginTop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextFrame::PutMarginTop ( float MarginTop ) {
+    HRESULT _hr = put_MarginTop(MarginTop);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTextOrientation TextFrame::GetOrientation ( ) {
+    enum MsoTextOrientation _result;
+    HRESULT _hr = get_Orientation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void TextFrame::PutOrientation ( enum MsoTextOrientation Orientation ) {
+    HRESULT _hr = put_Orientation(Orientation);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ThreeDFormat wrapper method implementations
+//
+
+inline IDispatchPtr ThreeDFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT ThreeDFormat::IncrementRotationX ( float Increment ) {
+    HRESULT _hr = raw_IncrementRotationX(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ThreeDFormat::IncrementRotationY ( float Increment ) {
+    HRESULT _hr = raw_IncrementRotationY(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ThreeDFormat::ResetRotation ( ) {
+    HRESULT _hr = raw_ResetRotation();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ThreeDFormat::SetThreeDFormat ( enum MsoPresetThreeDFormat PresetThreeDFormat ) {
+    HRESULT _hr = raw_SetThreeDFormat(PresetThreeDFormat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ThreeDFormat::SetExtrusionDirection ( enum MsoPresetExtrusionDirection PresetExtrusionDirection ) {
+    HRESULT _hr = raw_SetExtrusionDirection(PresetExtrusionDirection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline float ThreeDFormat::GetDepth ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Depth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutDepth ( float Depth ) {
+    HRESULT _hr = put_Depth(Depth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ColorFormatPtr ThreeDFormat::GetExtrusionColor ( ) {
+    struct ColorFormat * _result = 0;
+    HRESULT _hr = get_ExtrusionColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColorFormatPtr(_result, false);
+}
+
+inline enum MsoExtrusionColorType ThreeDFormat::GetExtrusionColorType ( ) {
+    enum MsoExtrusionColorType _result;
+    HRESULT _hr = get_ExtrusionColorType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutExtrusionColorType ( enum MsoExtrusionColorType ExtrusionColorType ) {
+    HRESULT _hr = put_ExtrusionColorType(ExtrusionColorType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState ThreeDFormat::GetPerspective ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Perspective(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutPerspective ( enum MsoTriState Perspective ) {
+    HRESULT _hr = put_Perspective(Perspective);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPresetExtrusionDirection ThreeDFormat::GetPresetExtrusionDirection ( ) {
+    enum MsoPresetExtrusionDirection _result;
+    HRESULT _hr = get_PresetExtrusionDirection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoPresetLightingDirection ThreeDFormat::GetPresetLightingDirection ( ) {
+    enum MsoPresetLightingDirection _result;
+    HRESULT _hr = get_PresetLightingDirection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutPresetLightingDirection ( enum MsoPresetLightingDirection PresetLightingDirection ) {
+    HRESULT _hr = put_PresetLightingDirection(PresetLightingDirection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPresetLightingSoftness ThreeDFormat::GetPresetLightingSoftness ( ) {
+    enum MsoPresetLightingSoftness _result;
+    HRESULT _hr = get_PresetLightingSoftness(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutPresetLightingSoftness ( enum MsoPresetLightingSoftness PresetLightingSoftness ) {
+    HRESULT _hr = put_PresetLightingSoftness(PresetLightingSoftness);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPresetMaterial ThreeDFormat::GetPresetMaterial ( ) {
+    enum MsoPresetMaterial _result;
+    HRESULT _hr = get_PresetMaterial(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutPresetMaterial ( enum MsoPresetMaterial PresetMaterial ) {
+    HRESULT _hr = put_PresetMaterial(PresetMaterial);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoPresetThreeDFormat ThreeDFormat::GetPresetThreeDFormat ( ) {
+    enum MsoPresetThreeDFormat _result;
+    HRESULT _hr = get_PresetThreeDFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float ThreeDFormat::GetRotationX ( ) {
+    float _result = 0;
+    HRESULT _hr = get_RotationX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutRotationX ( float RotationX ) {
+    HRESULT _hr = put_RotationX(RotationX);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float ThreeDFormat::GetRotationY ( ) {
+    float _result = 0;
+    HRESULT _hr = get_RotationY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutRotationY ( float RotationY ) {
+    HRESULT _hr = put_RotationY(RotationY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState ThreeDFormat::GetVisible ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ThreeDFormat::PutVisible ( enum MsoTriState Visible ) {
+    HRESULT _hr = put_Visible(Visible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IMsoDispCagNotifySink wrapper method implementations
+//
+
+inline HRESULT IMsoDispCagNotifySink::InsertClip ( IUnknown * pClipMoniker, IUnknown * pItemMoniker ) {
+    HRESULT _hr = raw_InsertClip(pClipMoniker, pItemMoniker);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMsoDispCagNotifySink::WindowIsClosing ( ) {
+    HRESULT _hr = raw_WindowIsClosing();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Balloon wrapper method implementations
+//
+
+inline IDispatchPtr Balloon::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr Balloon::GetCheckboxes ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Checkboxes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr Balloon::GetLabels ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Labels(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void Balloon::PutBalloonType ( enum MsoBalloonType pbty ) {
+    HRESULT _hr = put_BalloonType(pbty);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoBalloonType Balloon::GetBalloonType ( ) {
+    enum MsoBalloonType _result;
+    HRESULT _hr = get_BalloonType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Balloon::PutIcon ( enum MsoIconType picn ) {
+    HRESULT _hr = put_Icon(picn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoIconType Balloon::GetIcon ( ) {
+    enum MsoIconType _result;
+    HRESULT _hr = get_Icon(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Balloon::PutHeading ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Heading(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Balloon::GetHeading ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Heading(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Balloon::PutText ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Text(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Balloon::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Balloon::PutMode ( enum MsoModeType pmd ) {
+    HRESULT _hr = put_Mode(pmd);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoModeType Balloon::GetMode ( ) {
+    enum MsoModeType _result;
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Balloon::PutAnimation ( enum MsoAnimationType pfca ) {
+    HRESULT _hr = put_Animation(pfca);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoAnimationType Balloon::GetAnimation ( ) {
+    enum MsoAnimationType _result;
+    HRESULT _hr = get_Animation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Balloon::PutButton ( enum MsoButtonSetType psbs ) {
+    HRESULT _hr = put_Button(psbs);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoButtonSetType Balloon::GetButton ( ) {
+    enum MsoButtonSetType _result;
+    HRESULT _hr = get_Button(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Balloon::PutCallback ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Callback(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Balloon::GetCallback ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Callback(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Balloon::PutPrivate ( long plPrivate ) {
+    HRESULT _hr = put_Private(plPrivate);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long Balloon::GetPrivate ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Private(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT Balloon::SetAvoidRectangle ( int Left, int Top, int Right, int Bottom ) {
+    HRESULT _hr = raw_SetAvoidRectangle(Left, Top, Right, Bottom);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t Balloon::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum MsoBalloonButtonType Balloon::Show ( ) {
+    enum MsoBalloonButtonType _result;
+    HRESULT _hr = raw_Show(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT Balloon::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface BalloonCheckboxes wrapper method implementations
+//
+
+inline _bstr_t BalloonCheckboxes::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IDispatchPtr BalloonCheckboxes::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr BalloonCheckboxes::GetItem ( int Index ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline int BalloonCheckboxes::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void BalloonCheckboxes::PutCount ( int pccbx ) {
+    HRESULT _hr = put_Count(pccbx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IUnknownPtr BalloonCheckboxes::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface BalloonCheckbox wrapper method implementations
+//
+
+inline _bstr_t BalloonCheckbox::GetItem ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t BalloonCheckbox::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IDispatchPtr BalloonCheckbox::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void BalloonCheckbox::PutChecked ( VARIANT_BOOL pvarfChecked ) {
+    HRESULT _hr = put_Checked(pvarfChecked);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL BalloonCheckbox::GetChecked ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Checked(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void BalloonCheckbox::PutText ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Text(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t BalloonCheckbox::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface BalloonLabels wrapper method implementations
+//
+
+inline _bstr_t BalloonLabels::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IDispatchPtr BalloonLabels::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr BalloonLabels::GetItem ( int Index ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline int BalloonLabels::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void BalloonLabels::PutCount ( int pcwz ) {
+    HRESULT _hr = put_Count(pcwz);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IUnknownPtr BalloonLabels::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface BalloonLabel wrapper method implementations
+//
+
+inline _bstr_t BalloonLabel::GetItem ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t BalloonLabel::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IDispatchPtr BalloonLabel::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void BalloonLabel::PutText ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Text(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t BalloonLabel::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface AnswerWizardFiles wrapper method implementations
+//
+
+inline IDispatchPtr AnswerWizardFiles::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline _bstr_t AnswerWizardFiles::GetItem ( int Index ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline int AnswerWizardFiles::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT AnswerWizardFiles::Add ( _bstr_t FileName ) {
+    HRESULT _hr = raw_Add(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT AnswerWizardFiles::Delete ( _bstr_t FileName ) {
+    HRESULT _hr = raw_Delete(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface AnswerWizard wrapper method implementations
+//
+
+inline IDispatchPtr AnswerWizard::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline AnswerWizardFilesPtr AnswerWizard::GetFiles ( ) {
+    struct AnswerWizardFiles * _result = 0;
+    HRESULT _hr = get_Files(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return AnswerWizardFilesPtr(_result, false);
+}
+
+inline HRESULT AnswerWizard::ClearFileList ( ) {
+    HRESULT _hr = raw_ClearFileList();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT AnswerWizard::ResetFileList ( ) {
+    HRESULT _hr = raw_ResetFileList();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Assistant wrapper method implementations
+//
+
+inline IDispatchPtr Assistant::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT Assistant::Move ( int xLeft, int yTop ) {
+    HRESULT _hr = raw_Move(xLeft, yTop);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void Assistant::PutTop ( int pyTop ) {
+    HRESULT _hr = put_Top(pyTop);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int Assistant::GetTop ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Top(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutLeft ( int pxLeft ) {
+    HRESULT _hr = put_Left(pxLeft);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int Assistant::GetLeft ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Left(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT Assistant::Help ( ) {
+    HRESULT _hr = raw_Help();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long Assistant::StartWizard ( VARIANT_BOOL On, _bstr_t Callback, long PrivateX, const _variant_t & Animation, const _variant_t & CustomTeaser, const _variant_t & Top, const _variant_t & Left, const _variant_t & Bottom, const _variant_t & Right ) {
+    long _result = 0;
+    HRESULT _hr = raw_StartWizard(On, Callback, PrivateX, Animation, CustomTeaser, Top, Left, Bottom, Right, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT Assistant::EndWizard ( long WizardID, VARIANT_BOOL varfSuccess, const _variant_t & Animation ) {
+    HRESULT _hr = raw_EndWizard(WizardID, varfSuccess, Animation);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Assistant::ActivateWizard ( long WizardID, enum MsoWizardActType act, const _variant_t & Animation ) {
+    HRESULT _hr = raw_ActivateWizard(WizardID, act, Animation);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Assistant::ResetTips ( ) {
+    HRESULT _hr = raw_ResetTips();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline BalloonPtr Assistant::GetNewBalloon ( ) {
+    struct Balloon * _result = 0;
+    HRESULT _hr = get_NewBalloon(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return BalloonPtr(_result, false);
+}
+
+inline enum MsoBalloonErrorType Assistant::GetBalloonError ( ) {
+    enum MsoBalloonErrorType _result;
+    HRESULT _hr = get_BalloonError(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL Assistant::GetVisible ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutVisible ( VARIANT_BOOL pvarfVisible ) {
+    HRESULT _hr = put_Visible(pvarfVisible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoAnimationType Assistant::GetAnimation ( ) {
+    enum MsoAnimationType _result;
+    HRESULT _hr = get_Animation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutAnimation ( enum MsoAnimationType pfca ) {
+    HRESULT _hr = put_Animation(pfca);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetReduced ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Reduced(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutReduced ( VARIANT_BOOL pvarfReduced ) {
+    HRESULT _hr = put_Reduced(pvarfReduced);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void Assistant::PutAssistWithHelp ( VARIANT_BOOL pvarfAssistWithHelp ) {
+    HRESULT _hr = put_AssistWithHelp(pvarfAssistWithHelp);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetAssistWithHelp ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AssistWithHelp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutAssistWithWizards ( VARIANT_BOOL pvarfAssistWithWizards ) {
+    HRESULT _hr = put_AssistWithWizards(pvarfAssistWithWizards);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetAssistWithWizards ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AssistWithWizards(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutAssistWithAlerts ( VARIANT_BOOL pvarfAssistWithAlerts ) {
+    HRESULT _hr = put_AssistWithAlerts(pvarfAssistWithAlerts);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetAssistWithAlerts ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AssistWithAlerts(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutMoveWhenInTheWay ( VARIANT_BOOL pvarfMove ) {
+    HRESULT _hr = put_MoveWhenInTheWay(pvarfMove);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetMoveWhenInTheWay ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_MoveWhenInTheWay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutSounds ( VARIANT_BOOL pvarfSounds ) {
+    HRESULT _hr = put_Sounds(pvarfSounds);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetSounds ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Sounds(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutFeatureTips ( VARIANT_BOOL pvarfFeatures ) {
+    HRESULT _hr = put_FeatureTips(pvarfFeatures);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetFeatureTips ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_FeatureTips(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutMouseTips ( VARIANT_BOOL pvarfMouse ) {
+    HRESULT _hr = put_MouseTips(pvarfMouse);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetMouseTips ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_MouseTips(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutKeyboardShortcutTips ( VARIANT_BOOL pvarfKeyboardShortcuts ) {
+    HRESULT _hr = put_KeyboardShortcutTips(pvarfKeyboardShortcuts);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetKeyboardShortcutTips ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_KeyboardShortcutTips(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutHighPriorityTips ( VARIANT_BOOL pvarfHighPriorityTips ) {
+    HRESULT _hr = put_HighPriorityTips(pvarfHighPriorityTips);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetHighPriorityTips ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_HighPriorityTips(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutTipOfDay ( VARIANT_BOOL pvarfTipOfDay ) {
+    HRESULT _hr = put_TipOfDay(pvarfTipOfDay);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetTipOfDay ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_TipOfDay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutGuessHelp ( VARIANT_BOOL pvarfGuessHelp ) {
+    HRESULT _hr = put_GuessHelp(pvarfGuessHelp);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetGuessHelp ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_GuessHelp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutSearchWhenProgramming ( VARIANT_BOOL pvarfSearchInProgram ) {
+    HRESULT _hr = put_SearchWhenProgramming(pvarfSearchInProgram);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL Assistant::GetSearchWhenProgramming ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SearchWhenProgramming(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t Assistant::GetItem ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t Assistant::GetFileName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FileName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Assistant::PutFileName ( _bstr_t pbstr ) {
+    HRESULT _hr = put_FileName(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Assistant::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL Assistant::GetOn ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_On(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Assistant::PutOn ( VARIANT_BOOL pvarfOn ) {
+    HRESULT _hr = put_On(pvarfOn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface DocumentProperty wrapper method implementations
+//
+
+inline HRESULT DocumentProperty::Delete ( ) {
+    HRESULT _hr = raw_Delete();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t DocumentProperty::GetName ( long lcid ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(lcid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void DocumentProperty::PutName ( long lcid, _bstr_t pbstrRetVal ) {
+    HRESULT _hr = put_Name(lcid, pbstrRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t DocumentProperty::GetValue ( long lcid ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(lcid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void DocumentProperty::PutValue ( long lcid, const _variant_t & pvargRetVal ) {
+    HRESULT _hr = put_Value(lcid, pvargRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoDocProperties DocumentProperty::GetType ( long lcid ) {
+    enum MsoDocProperties _result;
+    HRESULT _hr = get_Type(lcid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void DocumentProperty::PutType ( long lcid, enum MsoDocProperties ptypeRetVal ) {
+    HRESULT _hr = put_Type(lcid, ptypeRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL DocumentProperty::GetLinkToContent ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_LinkToContent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void DocumentProperty::PutLinkToContent ( VARIANT_BOOL pfLinkRetVal ) {
+    HRESULT _hr = put_LinkToContent(pfLinkRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t DocumentProperty::GetLinkSource ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LinkSource(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void DocumentProperty::PutLinkSource ( _bstr_t pbstrSourceRetVal ) {
+    HRESULT _hr = put_LinkSource(pbstrSourceRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr DocumentProperty::GetApplication ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Application(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long DocumentProperty::GetCreator ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Creator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface MSDocumentProperties wrapper method implementations
+//
+
+inline DocumentPropertyPtr MSDocumentProperties::GetItem ( const _variant_t & Index, long lcid ) {
+    struct DocumentProperty * _result = 0;
+    HRESULT _hr = get_Item(Index, lcid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DocumentPropertyPtr(_result, false);
+}
+
+inline long MSDocumentProperties::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline DocumentPropertyPtr MSDocumentProperties::Add ( _bstr_t Name, VARIANT_BOOL LinkToContent, const _variant_t & Type, const _variant_t & Value, const _variant_t & LinkSource, long lcid ) {
+    struct DocumentProperty * _result = 0;
+    HRESULT _hr = raw_Add(Name, LinkToContent, Type, Value, LinkSource, lcid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DocumentPropertyPtr(_result, false);
+}
+
+inline IUnknownPtr MSDocumentProperties::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IDispatchPtr MSDocumentProperties::GetApplication ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Application(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long MSDocumentProperties::GetCreator ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Creator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IFoundFiles wrapper method implementations
+//
+
+inline _bstr_t IFoundFiles::GetItem ( int Index ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline int IFoundFiles::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr IFoundFiles::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IFind wrapper method implementations
+//
+
+inline _bstr_t IFind::GetSearchPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SearchPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IFind::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL IFind::GetSubDir ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SubDir(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IFind::GetTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Title(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IFind::GetAuthor ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Author(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IFind::GetKeywords ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Keywords(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IFind::GetSubject ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Subject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum MsoFileFindOptions IFind::GetOptions ( ) {
+    enum MsoFileFindOptions _result;
+    HRESULT _hr = get_Options(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IFind::GetMatchCase ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_MatchCase(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IFind::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL IFind::GetPatternMatch ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PatternMatch(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IFind::GetDateSavedFrom ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateSavedFrom(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFind::GetDateSavedTo ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateSavedTo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t IFind::GetSavedBy ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SavedBy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t IFind::GetDateCreatedFrom ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateCreatedFrom(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFind::GetDateCreatedTo ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateCreatedTo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum MsoFileFindView IFind::GetView ( ) {
+    enum MsoFileFindView _result;
+    HRESULT _hr = get_View(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoFileFindSortBy IFind::GetSortBy ( ) {
+    enum MsoFileFindSortBy _result;
+    HRESULT _hr = get_SortBy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoFileFindListBy IFind::GetListBy ( ) {
+    enum MsoFileFindListBy _result;
+    HRESULT _hr = get_ListBy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int IFind::GetSelectedFile ( ) {
+    int _result = 0;
+    HRESULT _hr = get_SelectedFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IFoundFilesPtr IFind::GetResults ( ) {
+    struct IFoundFiles * _result = 0;
+    HRESULT _hr = get_Results(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFoundFilesPtr(_result, false);
+}
+
+inline int IFind::Show ( ) {
+    int _result = 0;
+    HRESULT _hr = raw_Show(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IFind::PutSearchPath ( _bstr_t pbstr ) {
+    HRESULT _hr = put_SearchPath(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutName ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Name(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutSubDir ( VARIANT_BOOL retval ) {
+    HRESULT _hr = put_SubDir(retval);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutTitle ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Title(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutAuthor ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Author(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutKeywords ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Keywords(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutSubject ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Subject(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutOptions ( enum MsoFileFindOptions penmOptions ) {
+    HRESULT _hr = put_Options(penmOptions);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutMatchCase ( VARIANT_BOOL retval ) {
+    HRESULT _hr = put_MatchCase(retval);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutText ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Text(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutPatternMatch ( VARIANT_BOOL retval ) {
+    HRESULT _hr = put_PatternMatch(retval);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutDateSavedFrom ( const _variant_t & pdatSavedFrom ) {
+    HRESULT _hr = put_DateSavedFrom(pdatSavedFrom);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutDateSavedTo ( const _variant_t & pdatSavedTo ) {
+    HRESULT _hr = put_DateSavedTo(pdatSavedTo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutSavedBy ( _bstr_t pbstr ) {
+    HRESULT _hr = put_SavedBy(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutDateCreatedFrom ( const _variant_t & pdatCreatedFrom ) {
+    HRESULT _hr = put_DateCreatedFrom(pdatCreatedFrom);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutDateCreatedTo ( const _variant_t & pdatCreatedTo ) {
+    HRESULT _hr = put_DateCreatedTo(pdatCreatedTo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutView ( enum MsoFileFindView penmView ) {
+    HRESULT _hr = put_View(penmView);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutSortBy ( enum MsoFileFindSortBy penmSortBy ) {
+    HRESULT _hr = put_SortBy(penmSortBy);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutListBy ( enum MsoFileFindListBy penmListBy ) {
+    HRESULT _hr = put_ListBy(penmListBy);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IFind::PutSelectedFile ( int pintSelectedFile ) {
+    HRESULT _hr = put_SelectedFile(pintSelectedFile);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IFind::Execute ( ) {
+    HRESULT _hr = raw_Execute();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IFind::Load ( _bstr_t bstrQueryName ) {
+    HRESULT _hr = raw_Load(bstrQueryName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IFind::Save ( _bstr_t bstrQueryName ) {
+    HRESULT _hr = raw_Save(bstrQueryName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IFind::Delete ( _bstr_t bstrQueryName ) {
+    HRESULT _hr = raw_Delete(bstrQueryName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IFind::GetFileType ( ) {
+    long _result = 0;
+    HRESULT _hr = get_FileType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IFind::PutFileType ( long plFileType ) {
+    HRESULT _hr = put_FileType(plFileType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface FoundFiles wrapper method implementations
+//
+
+inline _bstr_t FoundFiles::GetItem ( int Index, long lcid ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(Index, lcid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long FoundFiles::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr FoundFiles::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface PropertyTest wrapper method implementations
+//
+
+inline _bstr_t PropertyTest::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum MsoCondition PropertyTest::GetCondition ( ) {
+    enum MsoCondition _result;
+    HRESULT _hr = get_Condition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t PropertyTest::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t PropertyTest::GetSecondValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_SecondValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum MsoConnector PropertyTest::GetConnector ( ) {
+    enum MsoConnector _result;
+    HRESULT _hr = get_Connector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface PropertyTests wrapper method implementations
+//
+
+inline PropertyTestPtr PropertyTests::GetItem ( int Index, long lcid ) {
+    struct PropertyTest * _result = 0;
+    HRESULT _hr = get_Item(Index, lcid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertyTestPtr(_result, false);
+}
+
+inline long PropertyTests::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT PropertyTests::Add ( _bstr_t Name, enum MsoCondition Condition, const _variant_t & Value, const _variant_t & SecondValue, enum MsoConnector Connector ) {
+    HRESULT _hr = raw_Add(Name, Condition, Value, SecondValue, Connector);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT PropertyTests::Remove ( int Index ) {
+    HRESULT _hr = raw_Remove(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IUnknownPtr PropertyTests::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface FileSearch wrapper method implementations
+//
+
+inline VARIANT_BOOL FileSearch::GetSearchSubFolders ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SearchSubFolders(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void FileSearch::PutSearchSubFolders ( VARIANT_BOOL SearchSubFoldersRetVal ) {
+    HRESULT _hr = put_SearchSubFolders(SearchSubFoldersRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL FileSearch::GetMatchTextExactly ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_MatchTextExactly(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void FileSearch::PutMatchTextExactly ( VARIANT_BOOL MatchTextRetVal ) {
+    HRESULT _hr = put_MatchTextExactly(MatchTextRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL FileSearch::GetMatchAllWordForms ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_MatchAllWordForms(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void FileSearch::PutMatchAllWordForms ( VARIANT_BOOL MatchAllWordFormsRetVal ) {
+    HRESULT _hr = put_MatchAllWordForms(MatchAllWordFormsRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t FileSearch::GetFileName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FileName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void FileSearch::PutFileName ( _bstr_t FileNameRetVal ) {
+    HRESULT _hr = put_FileName(FileNameRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoFileType FileSearch::GetFileType ( ) {
+    enum MsoFileType _result;
+    HRESULT _hr = get_FileType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void FileSearch::PutFileType ( enum MsoFileType FileTypeRetVal ) {
+    HRESULT _hr = put_FileType(FileTypeRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoLastModified FileSearch::GetLastModified ( ) {
+    enum MsoLastModified _result;
+    HRESULT _hr = get_LastModified(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void FileSearch::PutLastModified ( enum MsoLastModified LastModifiedRetVal ) {
+    HRESULT _hr = put_LastModified(LastModifiedRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t FileSearch::GetTextOrProperty ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TextOrProperty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void FileSearch::PutTextOrProperty ( _bstr_t TextOrProperty ) {
+    HRESULT _hr = put_TextOrProperty(TextOrProperty);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t FileSearch::GetLookIn ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LookIn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void FileSearch::PutLookIn ( _bstr_t LookInRetVal ) {
+    HRESULT _hr = put_LookIn(LookInRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int FileSearch::Execute ( enum MsoSortBy SortBy, enum MsoSortOrder SortOrder, VARIANT_BOOL AlwaysAccurate ) {
+    int _result = 0;
+    HRESULT _hr = raw_Execute(SortBy, SortOrder, AlwaysAccurate, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT FileSearch::NewSearch ( ) {
+    HRESULT _hr = raw_NewSearch();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline FoundFilesPtr FileSearch::GetFoundFiles ( ) {
+    struct FoundFiles * _result = 0;
+    HRESULT _hr = get_FoundFiles(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return FoundFilesPtr(_result, false);
+}
+
+inline PropertyTestsPtr FileSearch::GetPropertyTests ( ) {
+    struct PropertyTests * _result = 0;
+    HRESULT _hr = get_PropertyTests(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertyTestsPtr(_result, false);
+}
+
+//
+// interface COMAddIn wrapper method implementations
+//
+
+inline _bstr_t COMAddIn::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void COMAddIn::PutDescription ( _bstr_t RetValue ) {
+    HRESULT _hr = put_Description(RetValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t COMAddIn::GetProgId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProgId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t COMAddIn::GetGuid ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Guid(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL COMAddIn::GetConnect ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Connect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void COMAddIn::PutConnect ( VARIANT_BOOL RetValue ) {
+    HRESULT _hr = put_Connect(RetValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr COMAddIn::GetObject ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Object(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void COMAddIn::PutObject ( IDispatch * RetValue ) {
+    HRESULT _hr = put_Object(RetValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr COMAddIn::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+//
+// interface COMAddIns wrapper method implementations
+//
+
+inline COMAddInPtr COMAddIns::Item ( VARIANT * Index ) {
+    struct COMAddIn * _result = 0;
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return COMAddInPtr(_result, false);
+}
+
+inline long COMAddIns::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr COMAddIns::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline HRESULT COMAddIns::Update ( ) {
+    HRESULT _hr = raw_Update();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDispatchPtr COMAddIns::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT COMAddIns::SetAppModal ( VARIANT_BOOL varfModal ) {
+    HRESULT _hr = raw_SetAppModal(varfModal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface LanguageSettings wrapper method implementations
+//
+
+inline int LanguageSettings::GetLanguageID ( enum MsoAppLanguageID Id ) {
+    int _result = 0;
+    HRESULT _hr = get_LanguageID(Id, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL LanguageSettings::GetLanguagePreferredForEditing ( enum MsoLanguageID lid ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_LanguagePreferredForEditing(lid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// dispinterface _CommandBarsEvents wrapper method implementations
+//
+
+inline HRESULT _CommandBarsEvents::OnUpdate ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// dispinterface _CommandBarComboBoxEvents wrapper method implementations
+//
+
+inline HRESULT _CommandBarComboBoxEvents::Change ( struct _CommandBarComboBox * Ctrl ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", Ctrl);
+}
+
+//
+// dispinterface _CommandBarButtonEvents wrapper method implementations
+//
+
+inline HRESULT _CommandBarButtonEvents::Click ( struct _CommandBarButton * Ctrl, VARIANT_BOOL * CancelDefault ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009\x400b", Ctrl, CancelDefault);
+}
+
+//
+// interface WebPageFont wrapper method implementations
+//
+
+inline _bstr_t WebPageFont::GetProportionalFont ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProportionalFont(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void WebPageFont::PutProportionalFont ( _bstr_t pstr ) {
+    HRESULT _hr = put_ProportionalFont(pstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float WebPageFont::GetProportionalFontSize ( ) {
+    float _result = 0;
+    HRESULT _hr = get_ProportionalFontSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void WebPageFont::PutProportionalFontSize ( float pf ) {
+    HRESULT _hr = put_ProportionalFontSize(pf);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t WebPageFont::GetFixedWidthFont ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FixedWidthFont(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void WebPageFont::PutFixedWidthFont ( _bstr_t pstr ) {
+    HRESULT _hr = put_FixedWidthFont(pstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float WebPageFont::GetFixedWidthFontSize ( ) {
+    float _result = 0;
+    HRESULT _hr = get_FixedWidthFontSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void WebPageFont::PutFixedWidthFontSize ( float pf ) {
+    HRESULT _hr = put_FixedWidthFontSize(pf);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface WebPageFonts wrapper method implementations
+//
+
+inline int WebPageFonts::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline WebPageFontPtr WebPageFonts::GetItem ( enum MsoCharacterSet Index ) {
+    struct WebPageFont * _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return WebPageFontPtr(_result, false);
+}
+
+inline IUnknownPtr WebPageFonts::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface HTMLProjectItem wrapper method implementations
+//
+
+inline _bstr_t HTMLProjectItem::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL HTMLProjectItem::GetIsOpen ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsOpen(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT HTMLProjectItem::LoadFromFile ( _bstr_t FileName ) {
+    HRESULT _hr = raw_LoadFromFile(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT HTMLProjectItem::Open ( enum MsoHTMLProjectOpen OpenKind ) {
+    HRESULT _hr = raw_Open(OpenKind);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT HTMLProjectItem::SaveCopyAs ( _bstr_t FileName ) {
+    HRESULT _hr = raw_SaveCopyAs(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t HTMLProjectItem::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void HTMLProjectItem::PutText ( _bstr_t Text ) {
+    HRESULT _hr = put_Text(Text);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr HTMLProjectItem::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+//
+// interface HTMLProjectItems wrapper method implementations
+//
+
+inline HTMLProjectItemPtr HTMLProjectItems::Item ( VARIANT * Index ) {
+    struct HTMLProjectItem * _result = 0;
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return HTMLProjectItemPtr(_result, false);
+}
+
+inline long HTMLProjectItems::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr HTMLProjectItems::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IDispatchPtr HTMLProjectItems::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+//
+// interface HTMLProject wrapper method implementations
+//
+
+inline enum MsoHTMLProjectState HTMLProject::GetState ( ) {
+    enum MsoHTMLProjectState _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT HTMLProject::RefreshProject ( VARIANT_BOOL Refresh ) {
+    HRESULT _hr = raw_RefreshProject(Refresh);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT HTMLProject::RefreshDocument ( VARIANT_BOOL Refresh ) {
+    HRESULT _hr = raw_RefreshDocument(Refresh);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HTMLProjectItemsPtr HTMLProject::GetHTMLProjectItems ( ) {
+    struct HTMLProjectItems * _result = 0;
+    HRESULT _hr = get_HTMLProjectItems(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return HTMLProjectItemsPtr(_result, false);
+}
+
+inline IDispatchPtr HTMLProject::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT HTMLProject::Open ( enum MsoHTMLProjectOpen OpenKind ) {
+    HRESULT _hr = raw_Open(OpenKind);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface MsoDebugOptions wrapper method implementations
+//
+
+inline int MsoDebugOptions::GetFeatureReports ( ) {
+    int _result = 0;
+    HRESULT _hr = get_FeatureReports(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void MsoDebugOptions::PutFeatureReports ( int puintFeatureReports ) {
+    HRESULT _hr = put_FeatureReports(puintFeatureReports);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _CommandBars wrapper method implementations
+//
+
+inline CommandBarControlPtr _CommandBars::GetActionControl ( ) {
+    struct CommandBarControl * _result = 0;
+    HRESULT _hr = get_ActionControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlPtr(_result, false);
+}
+
+inline CommandBarPtr _CommandBars::GetActiveMenuBar ( ) {
+    struct CommandBar * _result = 0;
+    HRESULT _hr = get_ActiveMenuBar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarPtr(_result, false);
+}
+
+inline CommandBarPtr _CommandBars::Add ( const _variant_t & Name, const _variant_t & Position, const _variant_t & MenuBar, const _variant_t & Temporary ) {
+    struct CommandBar * _result = 0;
+    HRESULT _hr = raw_Add(Name, Position, MenuBar, Temporary, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarPtr(_result, false);
+}
+
+inline int _CommandBars::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL _CommandBars::GetDisplayTooltips ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DisplayTooltips(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBars::PutDisplayTooltips ( VARIANT_BOOL pvarfDisplayTooltips ) {
+    HRESULT _hr = put_DisplayTooltips(pvarfDisplayTooltips);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _CommandBars::GetDisplayKeysInTooltips ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DisplayKeysInTooltips(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBars::PutDisplayKeysInTooltips ( VARIANT_BOOL pvarfDisplayKeys ) {
+    HRESULT _hr = put_DisplayKeysInTooltips(pvarfDisplayKeys);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline CommandBarControlPtr _CommandBars::FindControl ( const _variant_t & Type, const _variant_t & Id, const _variant_t & Tag, const _variant_t & Visible ) {
+    struct CommandBarControl * _result = 0;
+    HRESULT _hr = raw_FindControl(Type, Id, Tag, Visible, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlPtr(_result, false);
+}
+
+inline CommandBarPtr _CommandBars::GetItem ( const _variant_t & Index ) {
+    struct CommandBar * _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarPtr(_result, false);
+}
+
+inline VARIANT_BOOL _CommandBars::GetLargeButtons ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_LargeButtons(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBars::PutLargeButtons ( VARIANT_BOOL pvarfLargeButtons ) {
+    HRESULT _hr = put_LargeButtons(pvarfLargeButtons);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoMenuAnimation _CommandBars::GetMenuAnimationStyle ( ) {
+    enum MsoMenuAnimation _result;
+    HRESULT _hr = get_MenuAnimationStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBars::PutMenuAnimationStyle ( enum MsoMenuAnimation pma ) {
+    HRESULT _hr = put_MenuAnimationStyle(pma);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IUnknownPtr _CommandBars::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IDispatchPtr _CommandBars::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT _CommandBars::ReleaseFocus ( ) {
+    HRESULT _hr = raw_ReleaseFocus();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int _CommandBars::GetIdsString ( int ids, BSTR * pbstrName ) {
+    int _result = 0;
+    HRESULT _hr = get_IdsString(ids, pbstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int _CommandBars::GetTmcGetName ( int tmc, BSTR * pbstrName ) {
+    int _result = 0;
+    HRESULT _hr = get_TmcGetName(tmc, pbstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL _CommandBars::GetAdaptiveMenus ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AdaptiveMenus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBars::PutAdaptiveMenus ( VARIANT_BOOL pvarfAdaptiveMenus ) {
+    HRESULT _hr = put_AdaptiveMenus(pvarfAdaptiveMenus);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline CommandBarControlsPtr _CommandBars::FindControls ( const _variant_t & Type, const _variant_t & Id, const _variant_t & Tag, const _variant_t & Visible ) {
+    struct CommandBarControls * _result = 0;
+    HRESULT _hr = raw_FindControls(Type, Id, Tag, Visible, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlsPtr(_result, false);
+}
+
+inline CommandBarPtr _CommandBars::AddEx ( const _variant_t & TbidOrName, const _variant_t & Position, const _variant_t & MenuBar, const _variant_t & Temporary, const _variant_t & TbtrProtection ) {
+    struct CommandBar * _result = 0;
+    HRESULT _hr = raw_AddEx(TbidOrName, Position, MenuBar, Temporary, TbtrProtection, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarPtr(_result, false);
+}
+
+inline VARIANT_BOOL _CommandBars::GetDisplayFonts ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DisplayFonts(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBars::PutDisplayFonts ( VARIANT_BOOL pvarfDisplayFonts ) {
+    HRESULT _hr = put_DisplayFonts(pvarfDisplayFonts);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface CommandBar wrapper method implementations
+//
+
+inline VARIANT_BOOL CommandBar::GetBuiltIn ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_BuiltIn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t CommandBar::GetContext ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Context(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBar::PutContext ( _bstr_t pbstrContext ) {
+    HRESULT _hr = put_Context(pbstrContext);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline CommandBarControlsPtr CommandBar::GetControls ( ) {
+    struct CommandBarControls * _result = 0;
+    HRESULT _hr = get_Controls(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlsPtr(_result, false);
+}
+
+inline HRESULT CommandBar::Delete ( ) {
+    HRESULT _hr = raw_Delete();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL CommandBar::GetEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Enabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutEnabled ( VARIANT_BOOL pvarfEnabled ) {
+    HRESULT _hr = put_Enabled(pvarfEnabled);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline CommandBarControlPtr CommandBar::FindControl ( const _variant_t & Type, const _variant_t & Id, const _variant_t & Tag, const _variant_t & Visible, const _variant_t & Recursive ) {
+    struct CommandBarControl * _result = 0;
+    HRESULT _hr = raw_FindControl(Type, Id, Tag, Visible, Recursive, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlPtr(_result, false);
+}
+
+inline int CommandBar::GetHeight ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutHeight ( int pdy ) {
+    HRESULT _hr = put_Height(pdy);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBar::GetIndex ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Index(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long CommandBar::GetInstanceId ( ) {
+    long _result = 0;
+    HRESULT _hr = get_InstanceId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int CommandBar::GetLeft ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Left(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutLeft ( int pxpLeft ) {
+    HRESULT _hr = put_Left(pxpLeft);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t CommandBar::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBar::PutName ( _bstr_t pbstrName ) {
+    HRESULT _hr = put_Name(pbstrName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t CommandBar::GetNameLocal ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameLocal(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBar::PutNameLocal ( _bstr_t pbstrNameLocal ) {
+    HRESULT _hr = put_NameLocal(pbstrNameLocal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr CommandBar::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline enum MsoBarPosition CommandBar::GetPosition ( ) {
+    enum MsoBarPosition _result;
+    HRESULT _hr = get_Position(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutPosition ( enum MsoBarPosition ppos ) {
+    HRESULT _hr = put_Position(ppos);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBar::GetRowIndex ( ) {
+    int _result = 0;
+    HRESULT _hr = get_RowIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutRowIndex ( int piRow ) {
+    HRESULT _hr = put_RowIndex(piRow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoBarProtection CommandBar::GetProtection ( ) {
+    enum MsoBarProtection _result;
+    HRESULT _hr = get_Protection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutProtection ( enum MsoBarProtection pprot ) {
+    HRESULT _hr = put_Protection(pprot);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT CommandBar::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBar::ShowPopup ( const _variant_t & x, const _variant_t & y ) {
+    HRESULT _hr = raw_ShowPopup(x, y);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int CommandBar::GetTop ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Top(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutTop ( int pypTop ) {
+    HRESULT _hr = put_Top(pypTop);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoBarType CommandBar::GetType ( ) {
+    enum MsoBarType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL CommandBar::GetVisible ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutVisible ( VARIANT_BOOL pvarfVisible ) {
+    HRESULT _hr = put_Visible(pvarfVisible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBar::GetWidth ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutWidth ( int pdx ) {
+    HRESULT _hr = put_Width(pdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL CommandBar::GetAdaptiveMenu ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AdaptiveMenu(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBar::PutAdaptiveMenu ( VARIANT_BOOL pvarfAdaptiveMenu ) {
+    HRESULT _hr = put_AdaptiveMenu(pvarfAdaptiveMenu);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface CommandBarControl wrapper method implementations
+//
+
+inline VARIANT_BOOL CommandBarControl::GetBeginGroup ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_BeginGroup(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutBeginGroup ( VARIANT_BOOL pvarfBeginGroup ) {
+    HRESULT _hr = put_BeginGroup(pvarfBeginGroup);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL CommandBarControl::GetBuiltIn ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_BuiltIn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t CommandBarControl::GetCaption ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBarControl::PutCaption ( _bstr_t pbstrCaption ) {
+    HRESULT _hr = put_Caption(pbstrCaption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr CommandBarControl::GetControl ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Control(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline CommandBarControlPtr CommandBarControl::Copy ( const _variant_t & Bar, const _variant_t & Before ) {
+    struct CommandBarControl * _result = 0;
+    HRESULT _hr = raw_Copy(Bar, Before, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlPtr(_result, false);
+}
+
+inline HRESULT CommandBarControl::Delete ( const _variant_t & Temporary ) {
+    HRESULT _hr = raw_Delete(Temporary);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t CommandBarControl::GetDescriptionText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DescriptionText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBarControl::PutDescriptionText ( _bstr_t pbstrText ) {
+    HRESULT _hr = put_DescriptionText(pbstrText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL CommandBarControl::GetEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Enabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutEnabled ( VARIANT_BOOL pvarfEnabled ) {
+    HRESULT _hr = put_Enabled(pvarfEnabled);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT CommandBarControl::Execute ( ) {
+    HRESULT _hr = raw_Execute();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int CommandBarControl::GetHeight ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutHeight ( int pdy ) {
+    HRESULT _hr = put_Height(pdy);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBarControl::GetHelpContextId ( ) {
+    int _result = 0;
+    HRESULT _hr = get_HelpContextId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutHelpContextId ( int pid ) {
+    HRESULT _hr = put_HelpContextId(pid);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t CommandBarControl::GetHelpFile ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBarControl::PutHelpFile ( _bstr_t pbstrFilename ) {
+    HRESULT _hr = put_HelpFile(pbstrFilename);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBarControl::GetId ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Id(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int CommandBarControl::GetIndex ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Index(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long CommandBarControl::GetInstanceId ( ) {
+    long _result = 0;
+    HRESULT _hr = get_InstanceId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CommandBarControlPtr CommandBarControl::Move ( const _variant_t & Bar, const _variant_t & Before ) {
+    struct CommandBarControl * _result = 0;
+    HRESULT _hr = raw_Move(Bar, Before, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlPtr(_result, false);
+}
+
+inline int CommandBarControl::GetLeft ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Left(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoControlOLEUsage CommandBarControl::GetOLEUsage ( ) {
+    enum MsoControlOLEUsage _result;
+    HRESULT _hr = get_OLEUsage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutOLEUsage ( enum MsoControlOLEUsage pcou ) {
+    HRESULT _hr = put_OLEUsage(pcou);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t CommandBarControl::GetOnAction ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OnAction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBarControl::PutOnAction ( _bstr_t pbstrOnAction ) {
+    HRESULT _hr = put_OnAction(pbstrOnAction);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline CommandBarPtr CommandBarControl::GetParent ( ) {
+    struct CommandBar * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarPtr(_result, false);
+}
+
+inline _bstr_t CommandBarControl::GetParameter ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Parameter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBarControl::PutParameter ( _bstr_t pbstrParam ) {
+    HRESULT _hr = put_Parameter(pbstrParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBarControl::GetPriority ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Priority(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutPriority ( int pnPri ) {
+    HRESULT _hr = put_Priority(pnPri);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT CommandBarControl::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBarControl::SetFocus ( ) {
+    HRESULT _hr = raw_SetFocus();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t CommandBarControl::GetTag ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBarControl::PutTag ( _bstr_t pbstrTag ) {
+    HRESULT _hr = put_Tag(pbstrTag);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t CommandBarControl::GetTooltipText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TooltipText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void CommandBarControl::PutTooltipText ( _bstr_t pbstrTooltip ) {
+    HRESULT _hr = put_TooltipText(pbstrTooltip);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBarControl::GetTop ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Top(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoControlType CommandBarControl::GetType ( ) {
+    enum MsoControlType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL CommandBarControl::GetVisible ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutVisible ( VARIANT_BOOL pvarfVisible ) {
+    HRESULT _hr = put_Visible(pvarfVisible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int CommandBarControl::GetWidth ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarControl::PutWidth ( int pdx ) {
+    HRESULT _hr = put_Width(pdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL CommandBarControl::GetIsPriorityDropped ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsPriorityDropped(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT CommandBarControl::Reserved1 ( ) {
+    HRESULT _hr = raw_Reserved1();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBarControl::Reserved2 ( ) {
+    HRESULT _hr = raw_Reserved2();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBarControl::Reserved3 ( ) {
+    HRESULT _hr = raw_Reserved3();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBarControl::Reserved4 ( ) {
+    HRESULT _hr = raw_Reserved4();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBarControl::Reserved5 ( ) {
+    HRESULT _hr = raw_Reserved5();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBarControl::Reserved6 ( ) {
+    HRESULT _hr = raw_Reserved6();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT CommandBarControl::Reserved7 ( ) {
+    HRESULT _hr = raw_Reserved7();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface CommandBarControls wrapper method implementations
+//
+
+inline CommandBarControlPtr CommandBarControls::Add ( const _variant_t & Type, const _variant_t & Id, const _variant_t & Parameter, const _variant_t & Before, const _variant_t & Temporary ) {
+    struct CommandBarControl * _result = 0;
+    HRESULT _hr = raw_Add(Type, Id, Parameter, Before, Temporary, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlPtr(_result, false);
+}
+
+inline int CommandBarControls::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CommandBarControlPtr CommandBarControls::GetItem ( const _variant_t & Index ) {
+    struct CommandBarControl * _result = 0;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlPtr(_result, false);
+}
+
+inline IUnknownPtr CommandBarControls::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline CommandBarPtr CommandBarControls::GetParent ( ) {
+    struct CommandBar * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarPtr(_result, false);
+}
+
+//
+// interface _CommandBarButton wrapper method implementations
+//
+
+inline VARIANT_BOOL _CommandBarButton::GetBuiltInFace ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_BuiltInFace(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarButton::PutBuiltInFace ( VARIANT_BOOL pvarfBuiltIn ) {
+    HRESULT _hr = put_BuiltInFace(pvarfBuiltIn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _CommandBarButton::CopyFace ( ) {
+    HRESULT _hr = raw_CopyFace();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int _CommandBarButton::GetFaceId ( ) {
+    int _result = 0;
+    HRESULT _hr = get_FaceId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarButton::PutFaceId ( int pid ) {
+    HRESULT _hr = put_FaceId(pid);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _CommandBarButton::PasteFace ( ) {
+    HRESULT _hr = raw_PasteFace();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t _CommandBarButton::GetShortcutText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ShortcutText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _CommandBarButton::PutShortcutText ( _bstr_t pbstrText ) {
+    HRESULT _hr = put_ShortcutText(pbstrText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoButtonState _CommandBarButton::GetState ( ) {
+    enum MsoButtonState _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarButton::PutState ( enum MsoButtonState pstate ) {
+    HRESULT _hr = put_State(pstate);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoButtonStyle _CommandBarButton::GetStyle ( ) {
+    enum MsoButtonStyle _result;
+    HRESULT _hr = get_Style(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarButton::PutStyle ( enum MsoButtonStyle pstyle ) {
+    HRESULT _hr = put_Style(pstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoCommandBarButtonHyperlinkType _CommandBarButton::GetHyperlinkType ( ) {
+    enum MsoCommandBarButtonHyperlinkType _result;
+    HRESULT _hr = get_HyperlinkType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarButton::PutHyperlinkType ( enum MsoCommandBarButtonHyperlinkType phlType ) {
+    HRESULT _hr = put_HyperlinkType(phlType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface CommandBarPopup wrapper method implementations
+//
+
+inline CommandBarPtr CommandBarPopup::GetCommandBar ( ) {
+    struct CommandBar * _result = 0;
+    HRESULT _hr = get_CommandBar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarPtr(_result, false);
+}
+
+inline CommandBarControlsPtr CommandBarPopup::GetControls ( ) {
+    struct CommandBarControls * _result = 0;
+    HRESULT _hr = get_Controls(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandBarControlsPtr(_result, false);
+}
+
+inline enum MsoOLEMenuGroup CommandBarPopup::GetOLEMenuGroup ( ) {
+    enum MsoOLEMenuGroup _result;
+    HRESULT _hr = get_OLEMenuGroup(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void CommandBarPopup::PutOLEMenuGroup ( enum MsoOLEMenuGroup pomg ) {
+    HRESULT _hr = put_OLEMenuGroup(pomg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _CommandBarComboBox wrapper method implementations
+//
+
+inline HRESULT _CommandBarComboBox::AddItem ( _bstr_t Text, const _variant_t & Index ) {
+    HRESULT _hr = raw_AddItem(Text, Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _CommandBarComboBox::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int _CommandBarComboBox::GetDropDownLines ( ) {
+    int _result = 0;
+    HRESULT _hr = get_DropDownLines(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarComboBox::PutDropDownLines ( int pcLines ) {
+    HRESULT _hr = put_DropDownLines(pcLines);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int _CommandBarComboBox::GetDropDownWidth ( ) {
+    int _result = 0;
+    HRESULT _hr = get_DropDownWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarComboBox::PutDropDownWidth ( int pdx ) {
+    HRESULT _hr = put_DropDownWidth(pdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _CommandBarComboBox::GetList ( int Index ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_List(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _CommandBarComboBox::PutList ( int Index, _bstr_t pbstrItem ) {
+    HRESULT _hr = put_List(Index, pbstrItem);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int _CommandBarComboBox::GetListCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_ListCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int _CommandBarComboBox::GetListHeaderCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_ListHeaderCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarComboBox::PutListHeaderCount ( int pcItems ) {
+    HRESULT _hr = put_ListHeaderCount(pcItems);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int _CommandBarComboBox::GetListIndex ( ) {
+    int _result = 0;
+    HRESULT _hr = get_ListIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarComboBox::PutListIndex ( int pi ) {
+    HRESULT _hr = put_ListIndex(pi);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _CommandBarComboBox::RemoveItem ( int Index ) {
+    HRESULT _hr = raw_RemoveItem(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum MsoComboStyle _CommandBarComboBox::GetStyle ( ) {
+    enum MsoComboStyle _result;
+    HRESULT _hr = get_Style(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _CommandBarComboBox::PutStyle ( enum MsoComboStyle pstyle ) {
+    HRESULT _hr = put_Style(pstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _CommandBarComboBox::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _CommandBarComboBox::PutText ( _bstr_t pbstrText ) {
+    HRESULT _hr = put_Text(pbstrText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _CommandBarActiveX wrapper method implementations
+//
+
+inline _bstr_t _CommandBarActiveX::GetControlCLSID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ControlCLSID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _CommandBarActiveX::PutControlCLSID ( _bstr_t pbstrClsid ) {
+    HRESULT _hr = put_ControlCLSID(pbstrClsid);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IUnknownPtr _CommandBarActiveX::GetQueryControlInterface ( _bstr_t bstrIid ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_QueryControlInterface(bstrIid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline HRESULT _CommandBarActiveX::SetInnerObjectFactory ( IUnknown * pUnk ) {
+    HRESULT _hr = raw_SetInnerObjectFactory(pUnk);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _CommandBarActiveX::EnsureControl ( ) {
+    HRESULT _hr = raw_EnsureControl();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void _CommandBarActiveX::PutInitWith ( IUnknown * _arg1 ) {
+    HRESULT _hr = put_InitWith(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ConnectorFormat wrapper method implementations
+//
+
+inline IDispatchPtr ConnectorFormat::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT ConnectorFormat::BeginConnect ( struct Shape * ConnectedShape, int ConnectionSite ) {
+    HRESULT _hr = raw_BeginConnect(ConnectedShape, ConnectionSite);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ConnectorFormat::BeginDisconnect ( ) {
+    HRESULT _hr = raw_BeginDisconnect();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ConnectorFormat::EndConnect ( struct Shape * ConnectedShape, int ConnectionSite ) {
+    HRESULT _hr = raw_EndConnect(ConnectedShape, ConnectionSite);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ConnectorFormat::EndDisconnect ( ) {
+    HRESULT _hr = raw_EndDisconnect();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum MsoTriState ConnectorFormat::GetBeginConnected ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_BeginConnected(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ShapePtr ConnectorFormat::GetBeginConnectedShape ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = get_BeginConnectedShape(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline int ConnectorFormat::GetBeginConnectionSite ( ) {
+    int _result = 0;
+    HRESULT _hr = get_BeginConnectionSite(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoTriState ConnectorFormat::GetEndConnected ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_EndConnected(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ShapePtr ConnectorFormat::GetEndConnectedShape ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = get_EndConnectedShape(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline int ConnectorFormat::GetEndConnectionSite ( ) {
+    int _result = 0;
+    HRESULT _hr = get_EndConnectionSite(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoConnectorType ConnectorFormat::GetType ( ) {
+    enum MsoConnectorType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ConnectorFormat::PutType ( enum MsoConnectorType Type ) {
+    HRESULT _hr = put_Type(Type);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface FreeformBuilder wrapper method implementations
+//
+
+inline IDispatchPtr FreeformBuilder::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT FreeformBuilder::AddNodes ( enum MsoSegmentType SegmentType, enum MsoEditingType EditingType, float X1, float Y1, float X2, float Y2, float X3, float Y3 ) {
+    HRESULT _hr = raw_AddNodes(SegmentType, EditingType, X1, Y1, X2, Y2, X3, Y3);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapePtr FreeformBuilder::ConvertToShape ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_ConvertToShape(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+//
+// interface GroupShapes wrapper method implementations
+//
+
+inline IDispatchPtr GroupShapes::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline int GroupShapes::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ShapePtr GroupShapes::Item ( const _variant_t & Index ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline IUnknownPtr GroupShapes::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface Shape wrapper method implementations
+//
+
+inline IDispatchPtr Shape::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT Shape::Apply ( ) {
+    HRESULT _hr = raw_Apply();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::Delete ( ) {
+    HRESULT _hr = raw_Delete();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapePtr Shape::Duplicate ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_Duplicate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline HRESULT Shape::Flip ( enum MsoFlipCmd FlipCmd ) {
+    HRESULT _hr = raw_Flip(FlipCmd);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::IncrementLeft ( float Increment ) {
+    HRESULT _hr = raw_IncrementLeft(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::IncrementRotation ( float Increment ) {
+    HRESULT _hr = raw_IncrementRotation(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::IncrementTop ( float Increment ) {
+    HRESULT _hr = raw_IncrementTop(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::PickUp ( ) {
+    HRESULT _hr = raw_PickUp();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::RerouteConnections ( ) {
+    HRESULT _hr = raw_RerouteConnections();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::ScaleHeight ( float Factor, enum MsoTriState RelativeToOriginalSize, enum MsoScaleFrom fScale ) {
+    HRESULT _hr = raw_ScaleHeight(Factor, RelativeToOriginalSize, fScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::ScaleWidth ( float Factor, enum MsoTriState RelativeToOriginalSize, enum MsoScaleFrom fScale ) {
+    HRESULT _hr = raw_ScaleWidth(Factor, RelativeToOriginalSize, fScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::Select ( const _variant_t & Replace ) {
+    HRESULT _hr = raw_Select(Replace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Shape::SetShapesDefaultProperties ( ) {
+    HRESULT _hr = raw_SetShapesDefaultProperties();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapeRangePtr Shape::Ungroup ( ) {
+    struct ShapeRange * _result = 0;
+    HRESULT _hr = raw_Ungroup(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapeRangePtr(_result, false);
+}
+
+inline HRESULT Shape::ZOrder ( enum MsoZOrderCmd ZOrderCmd ) {
+    HRESULT _hr = raw_ZOrder(ZOrderCmd);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline AdjustmentsPtr Shape::GetAdjustments ( ) {
+    struct Adjustments * _result = 0;
+    HRESULT _hr = get_Adjustments(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return AdjustmentsPtr(_result, false);
+}
+
+inline enum MsoAutoShapeType Shape::GetAutoShapeType ( ) {
+    enum MsoAutoShapeType _result;
+    HRESULT _hr = get_AutoShapeType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutAutoShapeType ( enum MsoAutoShapeType AutoShapeType ) {
+    HRESULT _hr = put_AutoShapeType(AutoShapeType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoBlackWhiteMode Shape::GetBlackWhiteMode ( ) {
+    enum MsoBlackWhiteMode _result;
+    HRESULT _hr = get_BlackWhiteMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutBlackWhiteMode ( enum MsoBlackWhiteMode BlackWhiteMode ) {
+    HRESULT _hr = put_BlackWhiteMode(BlackWhiteMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline CalloutFormatPtr Shape::GetCallout ( ) {
+    struct CalloutFormat * _result = 0;
+    HRESULT _hr = get_Callout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CalloutFormatPtr(_result, false);
+}
+
+inline int Shape::GetConnectionSiteCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_ConnectionSiteCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoTriState Shape::GetConnector ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Connector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ConnectorFormatPtr Shape::GetConnectorFormat ( ) {
+    struct ConnectorFormat * _result = 0;
+    HRESULT _hr = get_ConnectorFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ConnectorFormatPtr(_result, false);
+}
+
+inline FillFormatPtr Shape::GetFill ( ) {
+    struct FillFormat * _result = 0;
+    HRESULT _hr = get_Fill(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return FillFormatPtr(_result, false);
+}
+
+inline GroupShapesPtr Shape::GetGroupItems ( ) {
+    struct GroupShapes * _result = 0;
+    HRESULT _hr = get_GroupItems(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return GroupShapesPtr(_result, false);
+}
+
+inline float Shape::GetHeight ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutHeight ( float Height ) {
+    HRESULT _hr = put_Height(Height);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState Shape::GetHorizontalFlip ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_HorizontalFlip(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float Shape::GetLeft ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Left(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutLeft ( float Left ) {
+    HRESULT _hr = put_Left(Left);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline LineFormatPtr Shape::GetLine ( ) {
+    struct LineFormat * _result = 0;
+    HRESULT _hr = get_Line(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LineFormatPtr(_result, false);
+}
+
+inline enum MsoTriState Shape::GetLockAspectRatio ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_LockAspectRatio(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutLockAspectRatio ( enum MsoTriState LockAspectRatio ) {
+    HRESULT _hr = put_LockAspectRatio(LockAspectRatio);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Shape::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Shape::PutName ( _bstr_t Name ) {
+    HRESULT _hr = put_Name(Name);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ShapeNodesPtr Shape::GetNodes ( ) {
+    struct ShapeNodes * _result = 0;
+    HRESULT _hr = get_Nodes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapeNodesPtr(_result, false);
+}
+
+inline float Shape::GetRotation ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Rotation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutRotation ( float Rotation ) {
+    HRESULT _hr = put_Rotation(Rotation);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline PictureFormatPtr Shape::GetPictureFormat ( ) {
+    struct PictureFormat * _result = 0;
+    HRESULT _hr = get_PictureFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PictureFormatPtr(_result, false);
+}
+
+inline ShadowFormatPtr Shape::GetShadow ( ) {
+    struct ShadowFormat * _result = 0;
+    HRESULT _hr = get_Shadow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShadowFormatPtr(_result, false);
+}
+
+inline TextEffectFormatPtr Shape::GetTextEffect ( ) {
+    struct TextEffectFormat * _result = 0;
+    HRESULT _hr = get_TextEffect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TextEffectFormatPtr(_result, false);
+}
+
+inline TextFramePtr Shape::GetTextFrame ( ) {
+    struct TextFrame * _result = 0;
+    HRESULT _hr = get_TextFrame(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TextFramePtr(_result, false);
+}
+
+inline ThreeDFormatPtr Shape::GetThreeD ( ) {
+    struct ThreeDFormat * _result = 0;
+    HRESULT _hr = get_ThreeD(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ThreeDFormatPtr(_result, false);
+}
+
+inline float Shape::GetTop ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Top(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutTop ( float Top ) {
+    HRESULT _hr = put_Top(Top);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoShapeType Shape::GetType ( ) {
+    enum MsoShapeType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoTriState Shape::GetVerticalFlip ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_VerticalFlip(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t Shape::GetVertices ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Vertices(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum MsoTriState Shape::GetVisible ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutVisible ( enum MsoTriState Visible ) {
+    HRESULT _hr = put_Visible(Visible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float Shape::GetWidth ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Shape::PutWidth ( float Width ) {
+    HRESULT _hr = put_Width(Width);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int Shape::GetZOrderPosition ( ) {
+    int _result = 0;
+    HRESULT _hr = get_ZOrderPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ScriptPtr Shape::GetScript ( ) {
+    struct Script * _result = 0;
+    HRESULT _hr = get_Script(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ScriptPtr(_result, false);
+}
+
+inline _bstr_t Shape::GetAlternativeText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AlternativeText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void Shape::PutAlternativeText ( _bstr_t AlternativeText ) {
+    HRESULT _hr = put_AlternativeText(AlternativeText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ShapeRange wrapper method implementations
+//
+
+inline IDispatchPtr ShapeRange::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline int ShapeRange::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ShapePtr ShapeRange::Item ( const _variant_t & Index ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline IUnknownPtr ShapeRange::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline HRESULT ShapeRange::Align ( enum MsoAlignCmd AlignCmd, enum MsoTriState RelativeTo ) {
+    HRESULT _hr = raw_Align(AlignCmd, RelativeTo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::Apply ( ) {
+    HRESULT _hr = raw_Apply();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::Delete ( ) {
+    HRESULT _hr = raw_Delete();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::Distribute ( enum MsoDistributeCmd DistributeCmd, enum MsoTriState RelativeTo ) {
+    HRESULT _hr = raw_Distribute(DistributeCmd, RelativeTo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapeRangePtr ShapeRange::Duplicate ( ) {
+    struct ShapeRange * _result = 0;
+    HRESULT _hr = raw_Duplicate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapeRangePtr(_result, false);
+}
+
+inline HRESULT ShapeRange::Flip ( enum MsoFlipCmd FlipCmd ) {
+    HRESULT _hr = raw_Flip(FlipCmd);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::IncrementLeft ( float Increment ) {
+    HRESULT _hr = raw_IncrementLeft(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::IncrementRotation ( float Increment ) {
+    HRESULT _hr = raw_IncrementRotation(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::IncrementTop ( float Increment ) {
+    HRESULT _hr = raw_IncrementTop(Increment);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapePtr ShapeRange::Group ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_Group(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline HRESULT ShapeRange::PickUp ( ) {
+    HRESULT _hr = raw_PickUp();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapePtr ShapeRange::Regroup ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_Regroup(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline HRESULT ShapeRange::RerouteConnections ( ) {
+    HRESULT _hr = raw_RerouteConnections();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::ScaleHeight ( float Factor, enum MsoTriState RelativeToOriginalSize, enum MsoScaleFrom fScale ) {
+    HRESULT _hr = raw_ScaleHeight(Factor, RelativeToOriginalSize, fScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::ScaleWidth ( float Factor, enum MsoTriState RelativeToOriginalSize, enum MsoScaleFrom fScale ) {
+    HRESULT _hr = raw_ScaleWidth(Factor, RelativeToOriginalSize, fScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::Select ( const _variant_t & Replace ) {
+    HRESULT _hr = raw_Select(Replace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ShapeRange::SetShapesDefaultProperties ( ) {
+    HRESULT _hr = raw_SetShapesDefaultProperties();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapeRangePtr ShapeRange::Ungroup ( ) {
+    struct ShapeRange * _result = 0;
+    HRESULT _hr = raw_Ungroup(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapeRangePtr(_result, false);
+}
+
+inline HRESULT ShapeRange::ZOrder ( enum MsoZOrderCmd ZOrderCmd ) {
+    HRESULT _hr = raw_ZOrder(ZOrderCmd);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline AdjustmentsPtr ShapeRange::GetAdjustments ( ) {
+    struct Adjustments * _result = 0;
+    HRESULT _hr = get_Adjustments(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return AdjustmentsPtr(_result, false);
+}
+
+inline enum MsoAutoShapeType ShapeRange::GetAutoShapeType ( ) {
+    enum MsoAutoShapeType _result;
+    HRESULT _hr = get_AutoShapeType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutAutoShapeType ( enum MsoAutoShapeType AutoShapeType ) {
+    HRESULT _hr = put_AutoShapeType(AutoShapeType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoBlackWhiteMode ShapeRange::GetBlackWhiteMode ( ) {
+    enum MsoBlackWhiteMode _result;
+    HRESULT _hr = get_BlackWhiteMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutBlackWhiteMode ( enum MsoBlackWhiteMode BlackWhiteMode ) {
+    HRESULT _hr = put_BlackWhiteMode(BlackWhiteMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline CalloutFormatPtr ShapeRange::GetCallout ( ) {
+    struct CalloutFormat * _result = 0;
+    HRESULT _hr = get_Callout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CalloutFormatPtr(_result, false);
+}
+
+inline int ShapeRange::GetConnectionSiteCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_ConnectionSiteCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoTriState ShapeRange::GetConnector ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Connector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ConnectorFormatPtr ShapeRange::GetConnectorFormat ( ) {
+    struct ConnectorFormat * _result = 0;
+    HRESULT _hr = get_ConnectorFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ConnectorFormatPtr(_result, false);
+}
+
+inline FillFormatPtr ShapeRange::GetFill ( ) {
+    struct FillFormat * _result = 0;
+    HRESULT _hr = get_Fill(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return FillFormatPtr(_result, false);
+}
+
+inline GroupShapesPtr ShapeRange::GetGroupItems ( ) {
+    struct GroupShapes * _result = 0;
+    HRESULT _hr = get_GroupItems(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return GroupShapesPtr(_result, false);
+}
+
+inline float ShapeRange::GetHeight ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutHeight ( float Height ) {
+    HRESULT _hr = put_Height(Height);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoTriState ShapeRange::GetHorizontalFlip ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_HorizontalFlip(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline float ShapeRange::GetLeft ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Left(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutLeft ( float Left ) {
+    HRESULT _hr = put_Left(Left);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline LineFormatPtr ShapeRange::GetLine ( ) {
+    struct LineFormat * _result = 0;
+    HRESULT _hr = get_Line(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LineFormatPtr(_result, false);
+}
+
+inline enum MsoTriState ShapeRange::GetLockAspectRatio ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_LockAspectRatio(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutLockAspectRatio ( enum MsoTriState LockAspectRatio ) {
+    HRESULT _hr = put_LockAspectRatio(LockAspectRatio);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ShapeRange::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ShapeRange::PutName ( _bstr_t Name ) {
+    HRESULT _hr = put_Name(Name);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ShapeNodesPtr ShapeRange::GetNodes ( ) {
+    struct ShapeNodes * _result = 0;
+    HRESULT _hr = get_Nodes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapeNodesPtr(_result, false);
+}
+
+inline float ShapeRange::GetRotation ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Rotation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutRotation ( float Rotation ) {
+    HRESULT _hr = put_Rotation(Rotation);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline PictureFormatPtr ShapeRange::GetPictureFormat ( ) {
+    struct PictureFormat * _result = 0;
+    HRESULT _hr = get_PictureFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PictureFormatPtr(_result, false);
+}
+
+inline ShadowFormatPtr ShapeRange::GetShadow ( ) {
+    struct ShadowFormat * _result = 0;
+    HRESULT _hr = get_Shadow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShadowFormatPtr(_result, false);
+}
+
+inline TextEffectFormatPtr ShapeRange::GetTextEffect ( ) {
+    struct TextEffectFormat * _result = 0;
+    HRESULT _hr = get_TextEffect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TextEffectFormatPtr(_result, false);
+}
+
+inline TextFramePtr ShapeRange::GetTextFrame ( ) {
+    struct TextFrame * _result = 0;
+    HRESULT _hr = get_TextFrame(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TextFramePtr(_result, false);
+}
+
+inline ThreeDFormatPtr ShapeRange::GetThreeD ( ) {
+    struct ThreeDFormat * _result = 0;
+    HRESULT _hr = get_ThreeD(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ThreeDFormatPtr(_result, false);
+}
+
+inline float ShapeRange::GetTop ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Top(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutTop ( float Top ) {
+    HRESULT _hr = put_Top(Top);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MsoShapeType ShapeRange::GetType ( ) {
+    enum MsoShapeType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum MsoTriState ShapeRange::GetVerticalFlip ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_VerticalFlip(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ShapeRange::GetVertices ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Vertices(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum MsoTriState ShapeRange::GetVisible ( ) {
+    enum MsoTriState _result;
+    HRESULT _hr = get_Visible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutVisible ( enum MsoTriState Visible ) {
+    HRESULT _hr = put_Visible(Visible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float ShapeRange::GetWidth ( ) {
+    float _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ShapeRange::PutWidth ( float Width ) {
+    HRESULT _hr = put_Width(Width);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ShapeRange::GetZOrderPosition ( ) {
+    int _result = 0;
+    HRESULT _hr = get_ZOrderPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ScriptPtr ShapeRange::GetScript ( ) {
+    struct Script * _result = 0;
+    HRESULT _hr = get_Script(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ScriptPtr(_result, false);
+}
+
+inline _bstr_t ShapeRange::GetAlternativeText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AlternativeText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ShapeRange::PutAlternativeText ( _bstr_t AlternativeText ) {
+    HRESULT _hr = put_AlternativeText(AlternativeText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Shapes wrapper method implementations
+//
+
+inline IDispatchPtr Shapes::GetParent ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline int Shapes::GetCount ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ShapePtr Shapes::Item ( const _variant_t & Index ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline IUnknownPtr Shapes::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddCallout ( enum MsoCalloutType Type, float Left, float Top, float Width, float Height ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddCallout(Type, Left, Top, Width, Height, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddConnector ( enum MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddConnector(Type, BeginX, BeginY, EndX, EndY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddCurve ( const _variant_t & SafeArrayOfPoints ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddCurve(SafeArrayOfPoints, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddLabel ( enum MsoTextOrientation Orientation, float Left, float Top, float Width, float Height ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddLabel(Orientation, Left, Top, Width, Height, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddLine ( float BeginX, float BeginY, float EndX, float EndY ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddLine(BeginX, BeginY, EndX, EndY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddPicture ( _bstr_t FileName, enum MsoTriState LinkToFile, enum MsoTriState SaveWithDocument, float Left, float Top, float Width, float Height ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddPicture(FileName, LinkToFile, SaveWithDocument, Left, Top, Width, Height, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddPolyline ( const _variant_t & SafeArrayOfPoints ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddPolyline(SafeArrayOfPoints, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddShape ( enum MsoAutoShapeType Type, float Left, float Top, float Width, float Height ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddShape(Type, Left, Top, Width, Height, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddTextEffect ( enum MsoPresetTextEffect PresetTextEffect, _bstr_t Text, _bstr_t FontName, float FontSize, enum MsoTriState FontBold, enum MsoTriState FontItalic, float Left, float Top ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddTextEffect(PresetTextEffect, Text, FontName, FontSize, FontBold, FontItalic, Left, Top, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::AddTextbox ( enum MsoTextOrientation Orientation, float Left, float Top, float Width, float Height ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = raw_AddTextbox(Orientation, Left, Top, Width, Height, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline FreeformBuilderPtr Shapes::BuildFreeform ( enum MsoEditingType EditingType, float X1, float Y1 ) {
+    struct FreeformBuilder * _result = 0;
+    HRESULT _hr = raw_BuildFreeform(EditingType, X1, Y1, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return FreeformBuilderPtr(_result, false);
+}
+
+inline ShapeRangePtr Shapes::Range ( const _variant_t & Index ) {
+    struct ShapeRange * _result = 0;
+    HRESULT _hr = raw_Range(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapeRangePtr(_result, false);
+}
+
+inline HRESULT Shapes::SelectAll ( ) {
+    HRESULT _hr = raw_SelectAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ShapePtr Shapes::GetBackground ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = get_Background(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}
+
+inline ShapePtr Shapes::GetDefault ( ) {
+    struct Shape * _result = 0;
+    HRESULT _hr = get_Default(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ShapePtr(_result, false);
+}

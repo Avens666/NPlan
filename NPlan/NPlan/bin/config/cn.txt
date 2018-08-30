@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<NPlanString>
+	<String name="main_new" 		value="新建项目" />
+	<String name="main_open" 		value="打开项目" />
+	<String name="main_public" 		value="资源管理" />
+	<String name="main_setting" 	value="设置按钮" />
+	<String name="main_help" 		value="使用说明" />
+	<String name="main_about" 		value="关于" />
+	<String name="task" 			value="任务" />
+	<String name="task_title" 		value="任务管理" />
+	<String name="task_desc" 		value="任务描述" />
+	<String name="task_resource_name" 		value="任务名称" />
+	<String name="action_name" 				value="子任务名称" />
+	<String name="task_resource_time_start" value="开始时间: " />
+	<String name="task_resource_time_end" 	value="结束时间: " />
+	<String name="task_card_name" 			value="子任务" />
+	<String name="task_resource" 			value="资源" />
+	<String name="task_owner" 		value="责任人" />
+	<String name="task_time" 		value="计划工时" />
+	<String name="task_state " 		value="任务状态" />
+	<String name="task_borad_type"	value="任务墙类型" />
+	<String name="name" 			value="名称" />
+	<String name="id" 				value="编号" />
+	<String name="res_type" 			value="资源类型" />
+	<String name="ok" 				value="确定" />
+	<String name="cancel" 			value="取消    " />
+	<String name="delete" 			value="删除    " />
+	<String name="resource_edit" 	value="资源管理" />
+	<String name="resource_group" 	value="资源组" />
+	<String name="resource_item" 	value="资源项" />
+	<String name="project_name" 	value="项目名称" />
+	<String name="project_res" 	value="项目成员(从全局资源导入)" />
+	<String name="project_desc" 	value="项目描述" />
+	<String name="mile_stone" 		value="里程碑  " />
+	<String name="event" 			value="事件" />
+	<String name="project_info" 	value="项目信息" />
+	<String name="edit_title " 		value="里程碑编辑 " />
+	<String name="milestone_name" 	value="里程碑名称 " />
+	<String name="mem_edit" 		value="成员编辑" />
+	<String name="set_title" 		value="设置" />
+	<String name="set_lang" 		value="界面语言(重新启动软件后生效)" />
+	<String name="set_jp" 			value="日语" />
+	<String name="set_cn" 			value="中文" />
+	<String name="set_en" 			value="English" />
+	<String name="warning" 			value="提示" />
+	<String name="error" 			value="错误" />
+	<String name="save_warning" 	value="项目有修改,是否保存项目文件?" />
+	<String name="delete_warning" 	value="确定删除项目? 项目文件也一同删除" />
+	<String name="save_fail" 		value="文件保存失败,请检查文件是否为只读属性!" />
+	<String name="export_fail" 		value="文件导出失败!" />
+	<String name="export_ok" 		value="文件导出成功!" />
+	<String name="delete_fail" 		value="删除失败!" />
+	<String name="week1" 			value="一" />
+	<String name="week2" 			value="二" />
+	<String name="week3" 			value="三" />
+	<String name="week4" 			value="四" />
+	<String name="week5" 			value="五" />
+	<String name="week6" 			value="六" />
+	<String name="week0" 			value="日" />
+	<String name="man" 				value="男" />
+	<String name="woman" 			value="女" />
+	<String name="device" 			value="设备" />
+	<String name="all_week1" 			value="星期一" />
+	<String name="all_week2" 			value="星期二" />
+	<String name="all_week3" 			value="星期三" />
+	<String name="all_week4" 			value="星期四" />
+	<String name="all_week5" 			value="星期五" />
+	<String name="all_week6" 			value="星期六" />
+	<String name="all_week0" 			value="星期日" />
+	<String name="normal_calendar" 			value="常规日历" />
+	<String name="task_calendar" 			value="显示项目任务" />
+	<String name="taskcard_calendar" 		value="显示项目子任务" />
+	<String name="workday" 			value="工作日" />
+	<String name="holiday" 			value="节假日" />
+	<String name="overtime" 		value="加班日" />
+	<String name="open_prj" 		value="打开项目" />
+	<String name="del_prj" 			value="删除项目" />
+	<String name="min" 			value="最小化" />
+	<String name="max" 			value="最大化" />
+	<String name="restore" 			value="还原" />
+	<String name="exit" 			value="退出" />
+	<String name="save_prj" 			value="保存 ctrl+S" />
+	<String name="saveas_prj" 			value="另存为" />
+	<String name="setting_prj" 			value="项目设置" />
+	<String name="fold_prj" 			value="折叠" />
+	<String name="unfold_prj" 			value="展开" />
+	<String name="back_prj" 			value="返回" />
+	<String name="add_action" 			value="新增任务" />
+	<String name="add_milestone" 			value="新增里程碑" />
+	<String name="next_milestone" 			value="下一个里程碑" />
+	<String name="prev_milestone" 			value="上一个里程碑" />
+	<String name="yes" 					value="是" />
+	<String name="no"		 			value="否" />
+	<String name="id_exist"		 value="ID已存在，请输入正确的ID!" />
+	<String name="id_error"		 value="此ID输入错误，请输入正确的ID!" />
+	<String name="input_name"		 value="请输入姓名!" />
+	<String name="create_file_fail"	 value="创建文件失败！" />
+	<String name="prj_name_error"	 value="项目必须有一个名字！" />
+	<String name="open_file_invalid" value="你确定你导入的文件使用WP或者EXCEL打开？" />
+	<String name="open_file_fail"	 value="确保文件路径和类型是正确的，再重新尝试一次！" />
+	<String name="open_fail"	 value="打开失败!" />
+	<String name="import_res"	 value="导入成员
+一个一个添加太慢？试试批量导入成员数据。
+参考程序template目录下的Resources.csv文件，
+在表格中填写完成后一次性导入吧!" />
+	<String name="add_res"	 	 value="添加成员" />
+	<String name="del_res"	 	 value="删除成员" />
+	<String name="mod_res"	 	 value="编辑成员" />
+	<String name="project_edit"	 value="项目编辑
+ctrl+1" />
+	<String name="timeline_bar"	 value="任务时间轴窗口
+ctrl+2" />
+	<String name="task_board"	 value="任务故事板
+ctrl+3" />
+	<String name="resource_board"	 value="资源故事板
+ctrl+4" />
+	<String name="project_calendar"	 value="项目日历
+ctrl+5" />
+	<String name="no_prompt"	 value="不再提示" />
+	<String name="add_task"	 	 value="添加任务ctrl+T" />
+	<String name="add_action"	 value="添加子任务" />
+	<String name="edit_prj_name"	 value="编辑项目名" />
+	<String name="edit_task_name"	 value="编辑任务名" />
+	<String name="edit_action_name"	 value="编辑子任务名" />
+	<String name="edit_action_time"	 value="编辑子任务工时" />
+	<String name="delete_task"	 value="删除任务" />
+	<String name="delete_action"	 value="删除子任务" />
+	<String name="clear_action"	 value="清空所有子任务" />
+	<String name="start_use"	 value="开始使用" />
+
+</NPlanString>

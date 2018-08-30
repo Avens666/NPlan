@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NProject color="63340">
+    <StartDate>2015-09-15T14:39:16</StartDate>
+    <FinishDate>2015-12-13T00:00:00</FinishDate>
+    <DefaultStartTime>09:00:00</DefaultStartTime>
+    <DefaultFinishTime>18:00:00</DefaultFinishTime>
+    <MinutesPerDay>480</MinutesPerDay>
+    <MinutesPerWeek>2400</MinutesPerWeek>
+    <DaysPerMonth>20</DaysPerMonth>
+    <Calendars>
+        <Calendar>
+            <WorkDays></WorkDays>
+        </Calendar>
+        <Calendar>
+            <Holidays>
+                <Holiday>2015-Oct-01</Holiday>
+                <Holiday>2015-Oct-02</Holiday>
+                <Holiday>2015-Oct-05</Holiday>
+                <Holiday>2015-Oct-06</Holiday>
+            </Holidays>
+        </Calendar>
+    </Calendars>
+    <BaseInfo version="1.0" name="示例项目" leader="EvanChen" proDescribe="" />
+    <ResourcePool>
+        <ResourceGroup />
+        <Resources>
+            <Resource name="Tom" id="3" type="0" group="" />
+            <Resource name="Jack" id="4" type="0" group="0" />
+            <Resource name="Mark" id="5" type="0" group="" />
+            <Resource name="Rose" id="6" type="1" group="2" />
+            <Resource name="Jill" id="7" type="1" group="" />
+            <Resource name="Lily" id="8" type="1" group="1" />
+            <Resource name="Chris" id="9" type="0" group="" />
+            <Resource name="Jodan" id="10" type="0" group="0" />
+            <Resource name="Joe" id="11" type="1" group="3" />
+            <Resource name="Kiki" id="12" type="1" group="1" />
+            <Resource name="EvanChen" id="13" type="0" group="" />
+        </Resources>
+    </ResourcePool>
+    <TaskBoard>
+        <Item name="Todo" id="0" />
+        <Item name="In Process" id="1" />
+        <Item name="Verify" id="2" />
+        <Item name="Done" id="3" />
+    </TaskBoard>
+    <Tasks>
+        <Task color="2">
+            <TaskInfo name="任务01" id="1" leader="3" task_describe="" members="3,5" start_time="2015-09-15 14:39:16" end_time="2015-09-27 18:00:00" />
+            <TaskCard name="子任务02" id="65537" leader="3" plan_days="1" plan_hours="0" state="0" score="0" difficulty="1" start_time="2015-09-15 14:39:16" end_time="2015-10-15 14:39:16" />
+            <TaskCard name="子任务01" id="65538" leader="5" plan_days="1" plan_hours="0" state="0" score="0" difficulty="1" start_time="2015-09-15 14:39:16" end_time="2015-10-15 14:39:16" />
+        </Task>
+        <Task color="3">
+            <TaskInfo name="任务02" id="2" leader="6" task_describe="" members="6,5" start_time="2015-09-28 09:00:00" end_time="2015-10-27" />
+            <TaskCard name="Action04" id="131073" leader="6" plan_days="1" plan_hours="0" state="0" score="0" difficulty="1" start_time="2015-09-28 09:00:00" end_time="2015-10-28 09:00:00" />
+            <TaskCard name="Action" id="196613" leader="5" plan_days="1" plan_hours="0" state="0" score="0" difficulty="1" start_time="2015-09-28 09:00:09" end_time="2015-10-28 09:00:09" />
+        </Task>
+        <Task color="4">
+            <TaskInfo name="任务03" id="3" leader="5" task_describe="" members="5,3" start_time="2015-10-08" end_time="2015-11-13 18:00:00" />
+            <TaskCard name="子任务03" id="196609" leader="3" plan_days="1" plan_hours="0" state="1" score="0" difficulty="1" start_time="2015-10-08" end_time="2015-10-14 18:00:00" />
+            <TaskCard name="子任务05" id="196610" leader="5" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="2015-10-08" end_time="2015-10-12 18:00:00" />
+            <TaskCard name="子任务06" id="196611" leader="5" plan_days="0" plan_hours="0" state="1" score="0" difficulty="1" start_time="2015-10-10" end_time="2015-10-17 18:00:00" />
+            <TaskCard name="子任务04" id="196612" leader="5" plan_days="1" plan_hours="0" state="2" score="0" difficulty="1" start_time="2015-10-14" end_time="2015-10-24 18:00:00" />
+        </Task>
+        <Task color="5">
+            <TaskInfo name="任务04" id="4" leader="4" task_describe="" members="4,7,9" start_time="2015-09-21" end_time="2015-10-11 18:00:00" />
+            <TaskCard name="Action05" id="262145" leader="7" plan_days="1" plan_hours="0" state="0" score="0" difficulty="1" start_time="2015-09-21" end_time="2015-10-01 18:00:00" />
+            <TaskCard name="Action06" id="262146" leader="9" plan_days="1" plan_hours="0" state="0" score="0" difficulty="1" start_time="2015-09-29 09:00:00" end_time="2015-10-09 18:00:00" />
+        </Task>
+        <Task color="8">
+            <TaskInfo name="任务07" id="7" leader="4" task_describe="" members="4,9,13" start_time="2015-11-13" end_time="2015-12-13" />
+            <TaskCard name="Action88" id="458753" leader="13" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="2015-11-13" end_time="2015-12-13" />
+            <TaskCard name="Action99" id="458754" leader="9" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="2015-11-13" end_time="2015-12-13" />
+        </Task>
+        <Task color="6">
+            <TaskInfo name="任务05" id="5" leader="11" task_describe="" members="12,11" start_time="2015-10-15" end_time="2015-11-14" />
+            <TaskCard name="Action66" id="327681" leader="12" plan_days="1" plan_hours="0" state="2" score="0" difficulty="1" start_time="2015-10-15" end_time="2015-11-14" />
+            <TaskCard name="Action77" id="327682" leader="11" plan_days="1" plan_hours="0" state="2" score="0" difficulty="1" start_time="2015-10-15" end_time="2015-11-14" />
+        </Task>
+        <Task color="7">
+            <TaskInfo name="任务06" id="6" leader="6" task_describe="" members="10,7,6" start_time="2015-09-15 14:42:56" end_time="2015-10-15 14:42:56" />
+            <TaskCard name="Action11" id="393217" leader="10" plan_days="1" plan_hours="0" state="0" score="0" difficulty="1" start_time="2015-09-15 14:42:56" end_time="2015-10-15 14:42:56" />
+            <TaskCard name="Action22" id="393218" leader="7" plan_days="1" plan_hours="0" state="3" score="0" difficulty="1" start_time="2015-09-15 14:42:56" end_time="2015-10-15 14:42:56" />
+        </Task>
+        <Task color="9">
+            <TaskInfo name="任务08" id="8" leader="11" task_describe="" members="11,6" start_time="2015-10-22" end_time="2015-11-08 18:00:00" />
+            <TaskCard name="Action33" id="524289" leader="6" plan_days="1" plan_hours="0" state="1" score="0" difficulty="1" start_time="2015-10-22" end_time="2015-11-21" />
+            <TaskCard name="Action44" id="524290" leader="6" plan_days="1" plan_hours="0" state="1" score="0" difficulty="1" start_time="2015-10-22" end_time="2015-11-21" />
+        </Task>
+    </Tasks>
+    <Events />
+    <Milestones />
+</NProject>

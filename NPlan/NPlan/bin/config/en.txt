@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NPlanString>
+	<String name="main_new" 					value="New" />
+	<String name="main_open" 					value="Open" />
+	<String name="main_public" 					value="Resource" />
+	<String name="main_setting" 				value="Setting" />
+	<String name="main_help" 					value="Help" />
+	<String name="main_about" 					value="About" />
+	<String name="task" 						value="Task" />
+	<String name="task_title" 					value="Task Manage" />
+	<String name="task_desc" 					value="Task Describe" />
+	<String name="task_resource_name" 			value="Task Name" />
+	<String name="action_name" 					value="Action Name" />
+	<String name="task_resource_time_start" 	value="Start:" />
+	<String name="task_resource_time_end" 		value="End:" />
+	<String name="task_card_name" 				value="Action Name" />
+	<String name="task_resource" 				value="Resource" />
+	<String name="task_owner" 					value="Executor" />
+	<String name="task_time" 					value="working hours" />
+	<String name="task_state " 					value="State" />
+	<String name="task_borad_type"				value="Task Borad Type" />
+	<String name="name" 						value="Name" />
+	<String name="id" 							value="ID" />
+	<String name="res_type" 			value="Resource Type" />
+	<String name="ok" 							value="OK" />
+	<String name="cancel" 						value="Cancel" />
+	<String name="delete" 						value="Delete" />
+	<String name="resource_edit" 				value="Resource Manage" />
+	<String name="resource_group" 				value="Resource Group" />
+	<String name="resource_item" 				value="Resource Items" />
+	<String name="mile_stone" 					value="mile stone" />
+	<String name="project_name" 				value="Project Name" />
+	<String name="project_res" 	value="Project Member (Import from global resource)" />
+	<String name="project_info" 				value="Project Information" />
+	<String name="project_desc" 				value="Project Describe" />
+	<String name="event" 						value="Event" />
+	<String name="edit_title " 					value="MileStone Edit" />
+	<String name="milestone_name" 				value="MileStone Name" />
+	<String name="mem_edit" 					value="Member Edit" />
+	<String name="set_title" 					value="Setting" />
+	<String name="set_lang" 					value="Language(Need restarted program)" />
+	<String name="set_jp" 						value="Japanese" />
+	<String name="set_cn" 						value="Chinese" />
+	<String name="set_en" 						value="English" />
+	<String name="warning" 						value="Warning" />
+	<String name="error" 						value="Error" />
+	<String name="save_warning" 				value="Project data had been updated, Do you need save the project file?" />
+	<String name="delete_warning" 				value="Delete this project?" />
+	<String name="save_fail" 					value="Save the file failed, please check whether the file is read-only attribute!" />
+	<String name="export_fail" 					value="Export file failed!" />
+	<String name="delete_fail" 		value="Delete Fail!" />
+	<String name="export_ok" 					value="Export file succeed!" />
+	<String name="week1" 						value="Mon" />
+	<String name="week2" 						value="Tue" />
+	<String name="week3" 						value="Wed" />
+	<String name="week4" 						value="Thu" />
+	<String name="week5" 						value="Fri" />
+	<String name="week6" 						value="Sat" />
+	<String name="week0" 						value="Sun" />
+	<String name="man" 							value="man" />
+	<String name="woman" 						value="woman" />
+	<String name="device" 						value="device" />
+	<String name="all_week1" 			value="Monday" />
+	<String name="all_week2" 			value="Tuesday" />
+	<String name="all_week3" 			value="Wednesday" />
+	<String name="all_week4" 			value="Thursday" />
+	<String name="all_week5" 			value="Friday" />
+	<String name="all_week6" 			value="Saturday" />
+	<String name="all_week0" 			value="Sunday" />
+	<String name="normal_calendar" 			value="Normal Calendar" />
+	<String name="task_calendar" 			value="Show Task" />
+	<String name="taskcard_calendar" 		value="Show Action" />
+	<String name="workday" 			value="Workday" />
+	<String name="holiday" 			value="Holiday" />
+	<String name="overtime" 		value="Overtime" />
+	<String name="open_prj" 		value="Open Project" />
+	<String name="del_prj" 			value="Delete Project" />
+
+	<String name="min" 				value="Minimize" />
+	<String name="max" 				value="Maximize" />
+	<String name="restore" 				value="Restore" />
+	<String name="exit" 				value="Exit" />
+	<String name="save_prj" 			value="Save Project" />
+	<String name="saveas_prj" 			value="Save-as Project" />
+	<String name="setting_prj" 			value="Project setting" />
+	<String name="fold_prj" 			value="Fold" />
+	<String name="unfold_prj" 			value="Unfold" />
+	<String name="back_prj" 			value="Go Back" />
+	<String name="add_action" 			value="Add Action" />
+	<String name="add_milestone" 			value="Add Milestone" />
+	<String name="next_milestone" 			value="Next Milestone" />
+	<String name="prev_milestone" 			value="Previous Milestone" />
+	<String name="yes" 					value="yes" />
+	<String name="no"		 			value="no" />
+	<String name="id_exist"		 value="ID already exists.Please input adifferent ID!" />
+	<String name="id_error"		 value="ID erorr. Please input a different ID!" />
+	<String name="input_name"	 value="Please input a name!" />
+	<String name="create_file_fail"	 value="Create file failed!" />
+	<String name="prj_name_error"	 value="Project must have a name!" />
+	<String name="open_file_invalid" value="Are you sure you use WPS or EXCEL to open the exported file?" />
+	<String name="open_file_fail"	 value="Make sure the path and file type is correct, and try again.!" />
+	<String name="open_fail"	 value="Open Failed!" />
+	<String name="import_res"	 value="Import Members" />
+	<String name="add_res"	 	 value="Add Member" />
+	<String name="del_res"	 	 value="Delete Member" />
+	<String name="mod_res"	 	value="Modify Member" />
+	<String name="add_action"	 value="Add Action" />
+	<String name="project_edit"	 value="Project Edit" />
+	<String name="timeline_bar"	 value="Timeline Bar" />
+	<String name="task_board"	 value="Task Board" />
+	<String name="resource_board"	 value="Resource" />
+	<String name="project_calendar"	 value="Project Calendar" />
+	<String name="no_prompt"	 value="No Prompt" />
+	<String name="add_task"	 value="add task" />
+	<String name="add_action"	 value="add action" />
+	<String name="edit_prj_name"	 value="edit project name" />
+	<String name="edit_task_name"	 value="edit task name" />
+	<String name="edit_action_name"	 value="edit action name" />
+	<String name="edit_action_time"	 value="edit action time" />
+	<String name="delete_task"	 value="delete task" />
+	<String name="delete_action"	 value="delete action" />
+	<String name="clear_action"	 value="clear actions" />
+	<String name="start_use"	 value="start use" />
+
+</NPlanString>

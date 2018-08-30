@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HMIEngine", "HMIEngine\HMIEngine.vcxproj", "{23FCFB3A-6D76-4AFC-A139-399136794784}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA933548-4503-4428-BC87-02E916809AEB} = {BA933548-4503-4428-BC87-02E916809AEB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RenderingEngine", "RenderingEngine\RenderingEngine.vcxproj", "{BA933548-4503-4428-BC87-02E916809AEB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NPlan", "NPlan\NPlan.vcxproj", "{30E57D8F-365F-4BEE-A79A-24C01FE59DD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23FCFB3A-6D76-4AFC-A139-399136794784} = {23FCFB3A-6D76-4AFC-A139-399136794784}
+		{BA933548-4503-4428-BC87-02E916809AEB} = {BA933548-4503-4428-BC87-02E916809AEB}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NPlan_install", "NPlan_install\NPlan_install.vdproj", "{EBE62147-3EFB-4E61-AA4B-A55C1DC86A8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23FCFB3A-6D76-4AFC-A139-399136794784}.Debug|Win32.ActiveCfg = Debug|Win32
+		{23FCFB3A-6D76-4AFC-A139-399136794784}.Debug|Win32.Build.0 = Debug|Win32
+		{23FCFB3A-6D76-4AFC-A139-399136794784}.Release|Win32.ActiveCfg = Release|Win32
+		{23FCFB3A-6D76-4AFC-A139-399136794784}.Release|Win32.Build.0 = Release|Win32
+		{BA933548-4503-4428-BC87-02E916809AEB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA933548-4503-4428-BC87-02E916809AEB}.Debug|Win32.Build.0 = Debug|Win32
+		{BA933548-4503-4428-BC87-02E916809AEB}.Release|Win32.ActiveCfg = Release|Win32
+		{BA933548-4503-4428-BC87-02E916809AEB}.Release|Win32.Build.0 = Release|Win32
+		{30E57D8F-365F-4BEE-A79A-24C01FE59DD4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30E57D8F-365F-4BEE-A79A-24C01FE59DD4}.Debug|Win32.Build.0 = Debug|Win32
+		{30E57D8F-365F-4BEE-A79A-24C01FE59DD4}.Release|Win32.ActiveCfg = Release|Win32
+		{30E57D8F-365F-4BEE-A79A-24C01FE59DD4}.Release|Win32.Build.0 = Release|Win32
+		{EBE62147-3EFB-4E61-AA4B-A55C1DC86A8A}.Debug|Win32.ActiveCfg = Debug
+		{EBE62147-3EFB-4E61-AA4B-A55C1DC86A8A}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
