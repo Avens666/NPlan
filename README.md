@@ -1,5 +1,10 @@
 # NPlan
 NPlan是使用NUI图形引擎开发的一款项目管理软件
+
+![](http://nplan.nuiengine.com/nuiweb/nplan/image/title.png?raw=true)
+
+![](http://nplan.nuiengine.com/nuiweb/nplan/image/image001s.png?raw=true)
+
 NPlan 项目开源说明
 
 NPlan是使用NUI图形引擎开发的一款项目管理软件，里面使用了NUI引擎的各种能力，并实现了多种扩展控件，可以作为NUI引擎开发的全面示例教程。
