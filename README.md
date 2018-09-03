@@ -1,5 +1,4 @@
 # NPlan
-NPlan是使用NUI图形引擎开发的一款项目管理软件
 
 ![](http://nplan.nuiengine.com/nuiweb/nplan/image/title.png?raw=true)
 
