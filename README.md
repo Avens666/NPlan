@@ -1,8 +1,6 @@
 # NPlan
 
-![](http://nplan.nuiengine.com/nuiweb/nplan/image/title.png?raw=true)
 
-![](http://nplan.nuiengine.com/nuiweb/nplan/image/image001s.png?raw=true)
 
 NPlan project open source specification
 NPlan 项目开源说明
@@ -12,9 +10,6 @@ NPlan是使用NUI图形引擎开发的一款项目管理软件，里面使用了
 
 For more information about the project, please refer to the website.
 有关软件的详细信息，请参考网站
-
-http://www.nuiengine.com
-http://nplan.nuiengine.com
 
 Demo video:
 https://www.youtube.com/watch?v=FyqRYts4o5E  or   https://v.youku.com/v_show/id_XMTMzODAxOTkzNg==.html?spm=a1z3jc.11711052.0.0&isextonly=1
